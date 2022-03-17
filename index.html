@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+   <meta charset="UTF-8">
+   <title>html 구조</title>
+   <style>
+     h2{color: cadetblue;}
+     .aa{color:blueviolet;}
+     h3{color: aqua;}
+
+   </style>
+ </head>
+
+ <body>
+   <header>
+     <h1>html이란 무엇인가?</h1>
+     <h2>html의 구조와 tag에 대해서 알아본다.</h2>
+   </header>
+ </body>
+  <div id="container">
+    <article>
+      <h3>html의 정의</h3>
+      <section>
+        <p><strong>strong태그-컨텐츠의 구조를 정의하는 마크업 언어입니다.<br>html은 컨텐츠의 서로다른부분들을 씌우거나 (wrap) 감싸서 <br>다른 형식으로 보이게 하거나 특정한 방식으로 동작하도록 하는 <br>일련의 요소로 이루어져 있습니다.</strong></p>
+         <a href="https://developer.mozilla.org/ko/docs/Web/HTML" target="_blank">html API </a>
+         <br>
+         <a href="https://dev.w3.org/html5/html-author/charref" target="_blank">특수문자출력 </a>
+         <br>
+         <a href="https://quantumcode.tistory.com/" target="_blank"> 류일환강사님 티스토리 </a>
+         <br>
+         
+         
+      </section>
+
+      <h2>ul/ol/li태그</h2>
+      <ul>
+        <li><a href="#"> </a></li>
+        <li>1</li>
+        <li>2</li>
+      </ul>
+
+      <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ol>
+
+      <h2>emmet 사용</h2>
+      
+      #container>#itemlist>ol>li*5>a[href="#"]{item_0$}
+      <div id="container">
+        <div id="itemlist">
+          <ol>
+            <li><a href="#">item_01</a></li>
+            <li><a href="#">item_02</a></li>
+            <li><a href="#">item_03</a></li>
+            <li><a href="#">item_04</a></li>
+            <li><a href="#">item_05</a></li>
+          </ol>
+        </div>
+      </div>
+
+      div>(header>ul>li*2>a)+footer
+      <div>
+        <header>
+          <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </header>
+        <footer></footer>
+      </div>
+    </article>
+  </div>
+
+  <footer>2022 Design By CopyRight All right reserved</footer>
+  <br>
+
+  <h2>특수문자 출력</h2>
+  <p>띄어쓰기</p>
+  <p>html&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 띄어쓰기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;확인하기</p>
+  <p>&출력</p>
+  <p>html&amp;&amp; 띄어쓰기&amp;&amp;확인하기</p>
+  <p>!출력</p>
+  <p>html&excl;&excl; 띄어쓰기&excl;&excl;확인하기</p>
+  <p>#출력</p>
+  <p>html&num;&num; 띄어쓰기&num;&num; 확인하기</p>
+  <p>&copy;출력</p>
+  <p>html&copy;&copy; 띄어쓰기&copy;&copy;확인하기</p>
+ </html>
