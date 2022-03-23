@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> transform </title>
+        <style>
+            *{padding: 0;  margin: 0;}
+            
+            section{
+                width: 300px; 
+                height: 300px; 
+                border: 5px solid #000;  
+                margin: 100px;
+            }
+            
+            div{
+                width: 300px; 
+                height: 300px; 
+                background-color: rgba(127, 255, 212, 0.58);  
+                text-align: center; 
+                line-height: 300px;
+                font-size: 20px; 
+                font-weight: 900;
+                transform-origin: left bottom;
+              /*요소의 중심기점을 변경 속성 X, Y (px,%,단어)
+                 x - left,right,center 
+                 y - top,bottom,center
+              */
+            }
+            
+            div:hover{
+                 transition-duration: 0.5s;
+                /*함께 작성  X,Y*/
+                transform: translate(100px,100px); 
+                /*특정한 위치로 이동 px,% - x y*/
+                transform: translateX(100px);  /*x축만큼 이동*/
+                transform: translateY(100px);  /*y축만큼 이동*/
+                transform: scale(1.5,1.5); /*사이즈 확대,축소 -  0.9<1<1.1*/
+                transform: scale(0.5,0.5); /*축소*/
+                transform: scaleX(2);  /*X축으로 값만큼 확대,축소*/
+                transform: scaleY(2);  /*Y축으로 값만큼 확대,축소*/
+                transform: rotate(90deg);  /*특정한 값만큼 회전 - 각도(deg) 시계방향*/
+                transform: rotate(-90deg);  /* 시계반대방향 >> 마이너스*/
+                transform: rotateX(90deg);  /*x축을 기점으로 회전*/
+                transform: rotateY(90deg);  /*y축을 기점으로 회전*/
+                transform: skew(45deg,45deg);  /* 특정한 각도로 기울이기, 왜곡 -각도*/
+                transform: skewX(45deg); /*x축으로 기울이기*/
+                transform: skewY(45deg); /*Y축으로 기울이기*/
+                
+                transform: rotate(60deg);
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+            <section>
+                <div>transform</div>
+            </section>
+        
+    </body>
+</html>
