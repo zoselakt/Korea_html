@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #666666;
+    min-width: 760px;
+}
+
+a{ color: antiquewhite;}
+
+/*header*/
+#main-header{
+    height: 60px;
+    line-height: 60px;
+    padding-left: 10px;
+    background: #1d4088;
+    border-bottom: 1px solid black;
+}
+
+#main-header h1 a{
+    color: azure;
+}
+
+/*main*/
+#main-gnb{
+    overflow: hidden;
+    border-bottom: 1px solid black;
+    background: #32394a;
+    
+}
+
+#main-gnb > .left li{
+    float: left;
+}
+
+#main-gnb > .right > li{
+    float: right;
+}
+
+#main-gnb a{
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/*contents*/
+#wrap {
+    overflow: hidden;
+    background: #71b1d1;
+}
+
+#wrap #main-lnb{
+    float: left;
+    width: 200px;
+}
+
+#wrap #content-wrap{
+    float: left;
+    width: calc(100% - 200px);
+    background: cadetblue;
+}
+
+#main-lnb > ul > li > a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    border-bottom: 1px solid #96d6f6;
+    color: white;
+}
+
+#content{
+    background: white;
+    padding: 30px;
+}
+
+/*footer*/
+#main-footer{
+    padding: 10px;
+    border-top: 3px solid black;
+    text-align: center;
+}
