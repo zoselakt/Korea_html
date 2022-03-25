@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        h1{
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+        h2{
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+        .aa{
+            overflow: hidden;
+            padding: 10px;
+            margin-left: 100px;
+        }
+        .bb{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>ui/ux연습</h1>
+    <form class="aa">
+        <ul>
+            <li>
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" placeholder="이름을 입력하세요">
+            </li>
+
+            <li>
+                <label for="age">나이</label>
+                <input type="number" id="age" name="age" min="1" max="200" placeholder="나이를 입력하세요" style="width: 170px;">
+            </li>
+                    
+            <li class="bb">
+                <label for="sex">성별</label>
+                <p>남자 <input type="radio" id="sex" name="sex"> </p>                                
+                <p>여자 <input type="radio" id="sex" name="sex"> </p>
+            </li>
+
+            <li>
+                <label for="phone">전화번호</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="010-0000-0000">
+            </li>
+
+            <li>
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" placeholder="이메일을 입력하세요">
+            </li>
+
+            <li>
+                <label for="address">주소</label>
+                <input type="text" id="address" name="address">
+            </li>
+
+            <li>
+                <button type="submit">가입하기</button>
+                <button type="reset">취소</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<form>
+	<ul>
+		<li>
+			<label>
+			<input>
+		</li>
+
+		<li>
+			<label>
+			<select>
+				<option>
+				<option>
+				<option>
+			</select>
+		</li>
+	</ul>
+</form>

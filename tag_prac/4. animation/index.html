@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> animation </title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #747eff;
+        }
+
+        .ani {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50px, -50px);
+            /*위치 이동시 margin을 대신하여 사용가능!*/
+            background-color: #ff9259;
+            animation-name: test;
+            /*표현하고자 하는 요소에 "애니메이션 이름"*/
+            animation-duration: 2s;
+            /*애니메이션 동작에 대한 시간 ~ 지속될 시간*/
+            animation-iteration-count: infinite;
+            /*애니메이션 횟수 = 숫자값(횟수),infinite(무한반복)*/
+            animation-direction: alternate;
+            /* 애니메이션의 방향 - normal(기본값) / reverse(반대)
+                    alternate from < - > to의 교차반복  
+                */
+            animation-delay: 2s;
+            /*애니메이션의 지연값*/
+            animation-timing-function: ease-in-out;
+            /*시간별 속도감 변화*/
+        }
+        
+        
+
+        .ani:hover{
+            animation-play-state: paused;  /*중지*/
+            /*애니메이션 효과의 재생 혹은 중지.*/
+        }
+        
+        
+
+        
+        /*키프레임 - 구간별 스타일을 부여하여 동작을 표현 
+               0%, from  >> 시작점 
+               100%, to  >>  끝점 
+               30%~50%... >> 중간 구간도 표현간으! 
+            */
+        @keyframes test {
+            0% {
+                /*시작 css*/
+                border-radius: 0px;
+            }
+
+            30% {
+                border-radius: 50px 0 0 0;
+                background-color: #fae573;
+            }
+
+            50% {
+                border-radius: 0 50px 0 0;
+                background-color: #76b47d;
+            }
+
+            100% {
+                /*끝 css*/
+                border-radius: 100px;
+                background-color: #303efd;
+            }
+
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <!--animation:  각각의 "프레임" 내에서 스타일을 구현하여 동작을 만들때  사용 -->
+    <div class="ani"></div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
