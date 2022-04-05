@@ -1,0 +1,159 @@
+@charset "UTF-8";
+body{
+    background: linear-gradient(to right, #2196f3, #333);
+}
+
+h2{
+    margin: 30px 0;
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h3{
+    margin: 0 0 10px;
+    color: #666;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h4{
+    margin: 0 0 5px;
+    color: #666;
+}
+
+#wrap{ text-align: center; }
+
+.items{ margin-bottom: 20px; }
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch .slider{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* width: 100%;
+    height: 100%; */
+    background-color: green;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+    /*box-shadow: {x축} {y축} {퍼짐정도} {색상} inset:inner shadow */
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.switch .slider::before{
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 4px;
+    left: 4px;
+    background: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+/* common switch button*/
+.switch > input{ display: none; }
+.switch > input:checked + .slider { background: #2196f3; } 
+.switch > input:checked + .slider::before{ left: 30px; }
+
+/*round button*/
+.switch.round .slider{ border-radius: 17px; }
+.switch.round .slider::before{ border-radius: 50%;}
+
+/*large button*/
+.switch.large .slider{
+    border-radius: 22px;
+    width: 66px;
+    height: 40px;
+}
+.switch.large .slider::before{
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+}
+
+/*medium button*/
+.switch.medium .slider{
+    border-radius: 17px;
+    width: 56px;
+    height: 28px;
+}
+.switch.medium .slider::before{
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+}
+
+/*small button*/
+.switch.small .slider{
+    border-radius: 17px;
+    width: 50px;
+    height: 22px;
+}
+.switch.small .slider::before{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/*tiny button*/
+.switch.tiny .slider{
+    border-radius: 10px;
+    width: 36px;
+    height: 12px;
+}
+.switch.tiny .slider::before{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+
+/*green button*/
+
+.switch.green .slider{
+    border-radius: 22px;
+    width: 60px;
+    height: 34px;
+    background-color: blue;
+}
+.switch.green .slider::before{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+.switch.green > input:checked + .slider { background: green; } 
+/*red button*/
+.switch.red .slider{
+    border-radius: 22px;
+    width: 60px;
+    height: 34px;
+    background-color: red;
+}
+.switch.red .slider::before{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+.switch.red > input:checked + .slider { background: red; } 
+/*yellow*/
+.switch.yellow .slider{
+    border-radius: 22px;
+    width: 60px;
+    height: 34px;
+    background-color: yellow;
+}
+.switch.yellow .slider::before{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+.switch.yellow > input:checked + .slider { background: yellow; } 
