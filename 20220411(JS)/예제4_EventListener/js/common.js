@@ -36,7 +36,7 @@ clickBtn("btn","box","딱 기다리라~~~");
 let outPutText = "";
 
 function getText(){
-    // outPutText += document.getElementById("fname").value;
+    // outPutText += document.getElementById("fname").value; /input태그에 value값을 가져온다.
     // document.getElementById("textarea").innerHTML = outPutText;
     if(outPutText){
         outPutText += document.getElementById("fname").value;
