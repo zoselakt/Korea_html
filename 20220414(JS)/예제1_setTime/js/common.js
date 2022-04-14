@@ -47,7 +47,6 @@ function checkTime(i){
 }
 
 let on = 0;
-
 function startMove(){
     if(on == 0){
         on = 1;
@@ -68,4 +67,8 @@ function returnMove(){
     xMove = 0, yMove = 0;
     xDirection = 0, yDirection = 0;
     elem.style.left = `${0}px`;
+}
+
+function degree(){
+    xDirection++, yDirection++;
 }
