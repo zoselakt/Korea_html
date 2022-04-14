@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자 선택자 / 가상선택자</title>
+    <link rel="stylesheet" href="./css/initial.css"> 
+    <link rel="stylesheet" href="./css/style.css"> 
+</head>
+<body>
+    <!--
+        요소(element)선택 방법
+        1. tag ​: 태그명을 사용하여 선택할 수 있다.
+        div{ /*속성기재*/ }
+
+        2. ID ​: id명을 사용하여 선택할 수 있다.​( “#“으로 표기 )
+        #box{ /*속성기재*/ }
+        <div id=”box”>test</div>
+
+        3. class ​: class명을 사용하여 선택할 수 있다.​(“ .” 으로 표기 )
+        .box{ /*속성기재*/ }
+        <div class=”box”>test</div>
+
+        4. “:”​ ( 가상선택자 ) : “:” 또는 “::”​ 사용하여 선택할 수 있다.
+        ​.box:focus{ /*속성기재*/ }
+        <div class=”box”>test</div>
+
+        5. attribute​: 태그 속성을 사용하여 선택할 수 있다.​
+        input[type=text]{ /*속성기재*/ }
+        <input type=”text”/>
+    -->
+
+    <div id="gnb">
+        <div class="pseudo">
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h1>Character Selector</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit voluptatibus tenetur beatae magni! Tenetur blanditiis nulla quia nesciunt perferendis libero amet, omnis aliquid reprehenderit fuga, nam, quis sunt unde.</p>
+    <footer>
+        <ul id="sitemap">
+            <ul>
+                <li><a href="http://naver.com" title="sitemap1"></a></li>
+                <li><a href="http://daum.net" title="sitemap2"></a></li>
+                <li><a href="https://google.com" title="sitemap3"></a></li>
+                <li><a href="http://instagram.com" title="sitemap4"></a></li>
+            </ul>
+        </ul>
+    </footer>
+</body>
+</html>
