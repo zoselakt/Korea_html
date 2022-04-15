@@ -13,7 +13,7 @@
     </header>
     <div class="chatting-wrap">
         <div class="chatting">
-            <div class="title">chris</div>
+            <div class="title">Chris</div>
             <!-- 채팅화면영역 -->
             <div class="chat-box">
                 <div class="line char-b">
@@ -25,11 +25,52 @@
             </div>
             <!-- 채팅입력창 -->
             <div class="input-box">
-                <input type="text" class="user-a"><!--onkeypress 이벤트 처리추가영역-->
-                <button class="user-a" onclick="chattingFunc(this)">보내기</button><!--onclick 이벤트 영역-->
+                <input type="text" class="user-a" onkeypress="inputChat(this)"><!--onkeypress 이벤트 처리추가영역-->
+                <!-- <button class="user-a" onclick="chattingFunc(this)">보내기</button> // onclick 이벤트 영역 -->
+                <button class="user-a" onclick="sendTxt(this)">보내기</button>
+            </div>
+        </div>
+<!-- -------------------------------------------------------------------------- -->
+        <div class="chatting">
+            <div class="title">Jane</div>
+            <!-- 채팅화면영역 -->
+            <div class="chat-box">
+                <div class="line char-b">
+                    <div class="txt">안녕하세요</div>
+                </div>
+                <div class="line  char-a right">
+                    <div class="txt">안녕하세요</div>
+                </div>
+            </div>
+            <!-- 채팅입력창 -->
+            <div class="input-box">
+                <input type="text" class="user-b" onkeypress="inputChat(this)"><!--onkeypress 이벤트 처리추가영역-->
+                <!-- <button class="user-a" onclick="chattingFunc(this)">보내기</button> // onclick 이벤트 영역 -->
+                <button class="user-b" onclick="sendTxt(this)">보내기</button>
+            </div>
+        </div>
+<!-- -------------------------------------------------------------------------- -->
+        <div class="chatting">
+            <div class="title">Tom</div>
+            <!-- 채팅화면영역 -->
+            <div class="chat-box">
+                <div class="line char-b">
+                    <div class="txt">안녕하세요</div>
+                </div>
+                <div class="line  char-a right">
+                    <div class="txt">안녕하세요</div>
+                </div>
+            </div>
+            <!-- 채팅입력창 -->
+            <div class="input-box">
+                <input type="text" class="user-c" onkeypress="inputChat(this)"><!--onkeypress 이벤트 처리추가영역-->
+                <!-- <button class="user-a" onclick="chattingFunc(this)">보내기</button> // onclick 이벤트 영역 -->
+                <button class="user-c" onclick="sendTxt(this)">보내기</button>
             </div>
         </div>
     </div>
+
+    
     <script type="text/javascript" src="./js/common.js"></script>
 </body>
 </html>

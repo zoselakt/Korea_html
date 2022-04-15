@@ -41,6 +41,7 @@ button, input{outline: none;}
     background-color: rgba(255, 143, 0, 1);
     padding: 0 5px;
     color: #fff;   
+    z-index: 10;
 }
 /* 채팅바디 */
 .chatting .chat-box{
@@ -50,6 +51,7 @@ button, input{outline: none;}
     box-sizing: border-box;
     overflow-y: scroll;
     font-family: "Noto Sans KR", sans-serif;
+    scroll-behavior: smooth;
 }
 /* chatline */
 .chatting .chat-box .line{
@@ -79,7 +81,7 @@ button, input{outline: none;}
 .chatting .chat-box .line.char-b::before{
     background-image: url("../img/img_02.jpg");
 }
-.chatting .chat-box .line.char-b::before{
+.chatting .chat-box .line.char-c::before{
     background-image: url("../img/img_03.jpg");
 }
 /* 채팅2 오른쪽배치 */
@@ -101,6 +103,7 @@ button, input{outline: none;}
     color: #333;
     font-size: 14px;
     text-align: left;
+    word-break: break-all;
 }
 .chatting .chat-box .line.right .txt{
     background: rgb(255,100,0);
