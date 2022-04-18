@@ -41,7 +41,7 @@ function chattingFunc(e, i){ //this
     let thisClassName = e.getAttribute("class");
     // console.log(thisClassName); 어디서입력되는지 콘솔출력
     let elem = document.querySelectorAll('.chat-box');
-    let elemLeng = elem.length;
+    let elemLeng = elem.length; // 채팅창 갯수
     let htmlTxt = []; //채팅창 내용 담기
     let txt = []; //채팅창 입력값 받기
 
@@ -52,6 +52,7 @@ function chattingFunc(e, i){ //this
     // let htmlTxt2 = elem[1].innerHTML; //제인 채팅목록
     // let htmlTxt3 = elem[2].innerHTML; // 톰 채팅목록
 
+    // txt에 각각의 내용을 담아 html에 뿌리기 / right가 본인의 채팅창
     if(thisClassName == "user-a"){
         txt.push(`<div class = "line char-a right"><div class="txt">${inputTxt}</div></div>`);
         txt.push(`<div class = "line char-a"><div class="txt">${inputTxt}</div></div>`);
@@ -67,9 +68,9 @@ function chattingFunc(e, i){ //this
     }
 
     for(let i=0; i<elemLeng; i++){
-        htmlTxt[i] += txt[i];
-        elem[i].innerHTML = htmlTxt[i]; // 입력된 값을 대화창출력
-        elem[i].scrollTop = elem[i].scrollHeight - elem[i].offsetHeight; //스크롤
+        htmlTxt[i] += txt[i]; // 기존 채팅창 내용과 입력된 채팅창 내용을 더한 내용
+        elem[i].innerHTML = htmlTxt[i]; // 채팅창에 입력된 값을 대화창에 출력
+        elem[i].scrollTop = elem[i].scrollHeight - elem[i].offsetHeight; //스크롤 구현
     }
 }
     // elem[0].innerHTML = htmlTxt1;
