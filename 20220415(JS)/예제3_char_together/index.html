@@ -44,6 +44,8 @@
             </div>
             <!-- 채팅입력창 -->
             <div class="input-box">
+                <!-- class="" 안에 내용은 jquery, javascript등 db와 연결(쌍방향통신)할 수 있는 
+                    IDE 에서 데이터 값을 불러와 기입 / 현재는 연습으로 user-a/ -b 등으로 처리 -->
                 <input type="text" class="user-b" onkeypress="inputChat(this)"><!--onkeypress 이벤트 처리추가영역-->
                 <!-- <button class="user-a" onclick="chattingFunc(this)">보내기</button> // onclick 이벤트 영역 -->
                 <button class="user-b" onclick="sendTxt(this)">보내기</button>
