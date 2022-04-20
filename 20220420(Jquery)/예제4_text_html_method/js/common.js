@@ -18,9 +18,18 @@ $(function(){
     elem.text(elemInputText);
 */
     // b type
-    let elem = $("p#first");
-    let elemInput = $("p#second");
-    elem.text(elemInput.text());
+    // let elem = $("p#first");
+    // let elemInput = $("p#second");
+    // elem.text(elemInput.text());
 
+    // let numHtml = "";
+    // numHtml = $("p#second").html();
+
+    // c type
     let numHtml = "";
+   
+    numHtml = document.querySelector("#third h2").innerHTML;
+    console.log(numHtml)
+    document.querySelector("p#first").innerHTML = numHtml;
+    
 });
