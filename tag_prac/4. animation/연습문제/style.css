@@ -1,0 +1,124 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.title {
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 200px;
+    line-height: 50px;
+}
+.title > h4 {
+   float: left;
+   font-weight: 700;
+}
+
+.title > p {
+  float: right;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+#top {
+    width: 1000px;
+    overflow: hidden;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding: 30px 0px;
+    margin: 0 auto;
+}
+
+.left {
+    width: 400px;
+    float: left;
+    margin-left: 30px;
+    border: none;
+}
+
+.left td {
+   height: 100px;
+   text-align: center;
+   border: none;
+}
+.left span {
+   color: #51aec3;
+}
+
+
+.right {
+    width: 500px;
+    float: right;
+    border-top: 2px solid #ccc;
+}
+.right td, th {
+   height: 50px;
+   text-align: center;
+}
+.right th {
+   background-color: #f8f8f8;
+}
+
+.lnon {
+    border-left: 0px;
+}
+
+.rnon {
+    border-right: 0px;
+}
+
+
+#tab {
+    width: 1000px;
+    margin: 0px auto;
+    margin-top: 100px;
+    border: 1px solid #ccc;
+    height: 80px;
+    overflow: hidden;
+}
+
+#tab th {
+   width: 500px;
+   color: #a0a0a0;
+   font-size: 20px;
+}
+ #tab th:hover {
+   border-bottom: 2px solid #51aec3;
+   color: #51aec3;
+}
+
+#bor {
+    width: 1000px;
+    border-top: 2px solid #808080;
+    margin: 60px auto;
+    margin-bottom: 100px;
+}
+#bor th,
+#bor td {
+    height: 60px;
+    text-align: center;
+    border-left:none;
+    border-right:none;
+}
+
+button {
+    padding: 5px;
+    background-color: #51aec3;
+    color: #f8f8f8;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+}

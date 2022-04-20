@@ -1,0 +1,29 @@
+  ● transform (변형속성-응용) ●  
+  
+  - 접두어란? 
+  크로스 브라우징을 위해서 사용하는 구문으로, 다양한 브라우저(IE, 크롬, 파이어폭스, 오페라, 사파리 등의 브라우저)가 
+  존재하는 접두어를 속성 앞에 사용하여 모든 브라우저에서 호환되게 하기 위해 사용하는 언어. 
+
+  *크로스 브라우징 
+  하나의 웹페이지를 제작하였을 때 모든 브라우저에서 올바르게 호환되게 하는 것을 말함. 
+
+  ex) 
+  transform:translate(20px,30px);
+ -ms-transform:translate(20px,30px); /*ie9 익스플로러 용으로 보통 생략*/ 
+ -moz-transform:translate(20px,30px); /*파이어 폭스*/ 
+ -webkit-transform:translate(20px,30px); /*사파리, 크롬(구글)*/ 
+ -o-transform:translate(20px,30px); /*오페라*/
+
+
+
+ ●변환 속성 다중작성 방법● 
+  - matrix : perspective를 제외한  요소들을 한번에 적용 가능한 속성.
+   ex) transform: matrix(scaleX, skewX, skewY, scaleY, translateX, translateY)
+   ★★★★위의 내용을 이해하기 어려울 수 있으니 함께 업로드된 참고파일>matrix _ex.html 같이 확인해주세요! 
+
+  - transform 다중적용 가능
+   여러가지 동작을 한꺼번에 사용할 시 ,  띄어쓰기를 구분하여 속성을 작성
+
+
+
+
