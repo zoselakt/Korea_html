@@ -1,0 +1,8 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+html, body{height: 100%;}
+ul, ol{list-style: none;}
+body{background: cadetblue;}
+a{color: #666;}
+li{position: relative;}
+
