@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+input[type=password] {background: red;}
+
+.input-wrap input[name*=s]{
+    background: blue;
+}
+
+.gnb {
+    background: antiquewhite;
+}
+
+.gnb.yellow{
+    background: yellow;
+}
+
+.gnb.black{
+    background: black;
+}
+
+.gnb ul{
+    overflow: hidden;
+}
+
+.gnb ul li{
+    height: 30px;
+    float: left;
+}
+
+.gnb ul li a{
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+.gnb[class~=topmenu]{
+    display: none;
+}
+.location div[class=en-lang]{
+    color:deepskyblue;
+}
+.location div[class|=ko]{
+    color: aquamarine;
+}
+.location div[class=jp-lang]{
+    color:blue;
+}
+
+.thumbnail ul {
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.thumbnail ul li{
+    width: calc(25% - 20px);
+    margin: 0 10px;
+    float: left;
+}
+
+.thumbnail ul li a img{
+    width: 100%;
+}
+
+.thumbnail ul li:nth-child(2){
+    opacity: 0.5; /*자식요소에 상속*/
+}
+
+.thumbnail ul li a[href^=https] img{
+    opacity: 0.5;
+}
+.thumbnail ul li a[href="http://naver.com"] img{
+    opacity: 0.5;
+}
+
+.thumbnail ul li a img[src$=png]{
+    border: 3px solid red;
+    box-sizing: border-box;
+}

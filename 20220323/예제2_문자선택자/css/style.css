@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+h1::first-letter {
+    font-size: 100px;
+}
+p::first-line{
+    color: red;
+    font-size: 21px;
+}
+
+#gnb{
+    overflow: hidden;
+    padding: 0 30px;
+    border-bottom: 1px solid black;
+}
+
+#gnb .pseudo{
+    float: right;
+    overflow: hidden;
+}
+
+#gnb .pseudo li{
+    position: relative;
+    float: left;
+    height: 60px;
+    margin-right: 20px;
+}
+
+#gnb .pseudo li::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background: black;
+    top: calc(50% - 8px);
+    left: -11px;
+}
+
+/* #gnb .pseudo li{
+    position: relative;
+    float: left;
+    height: 60px;
+    padding-left: 20px;
+} */
+
+/* #gnb .pseudo li::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background: black;
+    top: calc(50% - 8px);
+    left: 9px;
+} */
+
+#gnb .pseudo li:nth-child(1)::before{
+    display: none;
+}
+
+#gnb .pseudo li a{
+    line-height: 60px;
+}
+
+/*사용 ↓*/
+#sitemap{
+    overflow: hidden;
+}
+
+#sitemap li{
+    float: left;
+    height: 30px;
+    margin-left: 20px;
+}
+
+#sitemap li:first-child{
+    margin-left: 0;
+}
+
+#sitemap li a{
+    line-height: 30px;
+}
+
+#sitemap li a::after{
+    content: attr(title);
+}
