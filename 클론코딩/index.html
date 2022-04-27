@@ -4,279 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 클론코딩한번해보자. </title>
-    <link rel="stylesheet" href="./css/initial.min.css"/>
-    <link rel="stylesheet" href="./css/style.css"/>
-
-    <script type="text/javascript" src="./js/jquery.js"></script>
-    <script type="text/javascript" src="./js/common.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/initial.css"/>
+    <link rel="stylesheet" href="css/style1.css"/>
 </head>
 <body>
-    <div id="_nuxt">
-        <div id="_layout">
-            <div id="app">
-                <div id="headerGnbCon" class="header_wrap fixed">
-                    <header id="header">
-                        <div class="header_logo">
-                            <a href="https://www.kumsung.co.kr/" class="logo_img kumsung">금성출판사 클론코딩</a>
-                        </div>
-                        <div class="gnb-wrapper">
-                            <nav id="gnbNav">
-                                <ul class="gnb nav_container en">
-                                    <li class="depth1 purunet"><a href="#" type="button" class="purunet-btn">"PURUNET"<i class="arrow">::before ::after</i></a></li>
-                                    <li class="depth1"><a href="#" class="ABOUT US"></a>
-                                        <div id="depth2">
-                                        <ul>
-                                            <li><a href="#" class>회사소개</a></li>
-                                            <li><a href="#" class>history</a></li>
-                                            <li><a href="#" class>금성 소식</a></li>
-                                        </ul>
-                                    </div>
-                                    </li>
-                                    <li class="depth1"><a href="#" class="BUSINESS"></a>
-                                    <div class="depth2">
-                                        <ul>
-                                            <li><a href="#" class>Learning Biz</a></li>
-                                            <li><a href="#" class>Contents Biz</a></li>
-                                            <li><a href="#" class>School Biz</a></li>
-                                        </ul>
-                                    </div>
-                                    </li>
-                                    <li class="depth1" class><a href="#">CSR</a>
-                                        <div class="depth2">
-                                        <ul>
-                                            <li><a href="#" class>금성문화재단</a></li>
-                                        </ul>
-                                        </div>
-                                    </li>
-                                    <li class="depth1" class><a href="#">CAREER</a>
-                                    <div class="depth2">
-                                        <ul>
-                                            <li><a href="#" class>직원 채용</a></li>
-                                            <li><a href="#" class>선생님 채용</a></li>
-                                        </ul>
-                                    </div>
-                                    </li>
-                                    <li class="depth1" class><a href="#">SUPPROT</a>
-                                    <div class="depth2">
-                                        <ul>
-                                            <li><a href="">FAQ</a></li>
-                                            <li><a href="">문의하기</a></li>
-                                        </ul>
-                                    </div>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div id="rightUtils">
-                            <div id="hamburgbtn">
-                                ::before
-                                <i class="ico"></i>
-                                ::after
-                            </div>
-                        </div>
-                    </header>
+    <div id="wrap"> <!-- #headerbtn -->
+        <header id="header"> <!--gnb-wrapper-->
+            <div class="h-inner">
+                <!-- 로고영역 -->
+                <div id="logo">
+                    <h1><a href="#"><img src="./images/logo_img.png"></a></h1>
                 </div>
-                <div id="contensWrap">
-                    <div id="mainAnimation" class="contents-wrap">
-                        <div class="ani line-box box1"></div>
-                        <div class="ani line-box box2"></div>
-                        <div class="ani line-box box3"></div>
-                        <div class="ani line-box box4"></div>
-                        <div class="ani line-box box5"></div>
-                        <div class="ani line-box box6"></div>
-                        <div class="ani line-box box7"></div>
-                        <div class="ani draw item1"></div>
-                        <div class="ani draw item2"></div>
-                        <div class="ani draw item2-1"></div>
-                        <div class="ani draw item3"></div>
-                        <div class="ani draw item4"></div>
-                        <div class="ani draw item5"></div>
-                        <div class="ani draw item6"></div>
-                        <div class="ani draw item7"></div>
-                        <div class="ani draw item8"></div>
-                        <div class="inner-con">
-                            <h1 class="text first">이제 금성이 변화합니다.</h1>
-                            <h2 class="text second">
-                                <p class="first">"에듀테크로"<br>"준비하는미래"</p>
-                                <p>"휴먼터치로"<br>"채워가는 교육"</p>
-                            </h2>
-                        </div>
-
-                    </div>
-                    <div id="secondScene2" class="contents-warp">
-                        <div class="inner-con">
-                            <p class="top-title en">EDUTECH + HUMUNTOUCH</p>
-                            <h3 class="main-title">"사람과 기술이 함께하는" <br class="mo">"최고의 교육서비스"</h3>
-                            <p class="content-txt">"60년간 학생들과 현장에서 함께한 교육 전문가들이"<br>"콘텐츠에 에듀테크를 결합하여"<br>"사람과 사람, 사람과 콘텐츠를 연결하는"<br class="mo">"교육서비스를" </p>
-                        </div>
-
-                    </div>
-                    <div>
-                        <div id="bannerContents_0" class="contents-wrap section-con banner-container">
-                            ::before
-                            <div class="text-con">
-                                <h2>
-                                    <p>푸르넷</p>
-                                </h2>
-                                <p class="sub-title en">"최고의 선생님, 최적의 학습 공간에"<br>"AI 러닝 솔루션을 더하다"</p>
-                                <p class="description">"푸르넷 공부방과 잉글리시버디 영어 학습이"<br>"이제 초개인화 교육 서비스로 진화합니다."<br>"지난 20년 동안 우리 자녀들의 두 번째 담임선생님으로"<br>"대한민국 자기주도학습을 개척해 왔던 아름다운"<br>"공부방 푸르넷에서 아이의 학습 성향에 최적화된"<br>"학습 로드맵을 만나 보세요."</p>
-                                <button class="more-btn en"><a href="#" class>"Learning Biz"<i class="arrow">::before ::after</i></a></button>
-                            </div>
-                        </div>
-                        <div id="bannerContents_1" class="contents-wrap section-con banner-container">
-                            <div class="inner-con even">
-                                <div class="text-con">
-                                    <h2>
-                                        <p>콘텐츠</p>
-                                    </h2>
-                                    <p class="sub-title en">"60년 도서 출판 역사에<br>"디지털 콘텐츠 플랫폼을 더하다</p>
-                                    <p class="description">"영유아 초등 전집, 단행본, 사전, 지식백과 등"<br>"대한민국 교육 출판 역사의 한 축이었던 금성의"<br>"60년 도서 출판 역사, 그 방대한 콘텐츠가 스마트"<br>"플랫폼으로 확산됩니다. 배움의 첫 시작과 끝,"<br>"금성 콘텐츠 플랫폼이 함께하겠습니다."</p>
-                                    <button class="more-btn en"><a href="#" class>"Contents Biz"<i class="arrow">::before ::after</i></a></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="bannerContents_2" class="contents-wrap section-con banner-container">
-                            <div id="inner-con">
-                                <div class="text-con">
-                                    <h2>
-                                        <p>교과서</p>
-                                    </h2>
-                                </div>
-                                <p class="sub-title en">"깊이 있는 교과서에"<br>"스마트 교수학습 아카이브를 더하다"</p>
-                                <p class="description">"더 좋은 교과서 그리고 혁신적인 디지털 교수학습자료"<br>"플랫폼. 금성은 교육의 근간은 학교와 교과서에"<br>"있다는 생각을 잊지 않았습니다. 1978년부터 교과서"<br>"를 만들어 온 금성은 학교와 선생님의 든든한'<br class="mb"> "조력자로서,"<br class="pc"> "한결같이 더 깊이 있는 교과서를 만들고," <br class="mb">"스마트한"<br class="pc">"수업 지원 플랫폼 티칭허브를" <br class="mb">"제공하겠습니다."</p>
-                                <button class="more-btn en"><a href="#" class>"School Biz"<i>::before ::after</i></a></button>
-                            </div>
-                        </div>
-                        <div id="cardContainer" class="contents-wrap">
-                            <div class="inner-con">
-                                <header>
-                                    <p class="category">News</p>
-                                    <h2 class="title">"교육의 미래를"<br class="mo">"제시합니다</h2>
-                                    <button class="more"> <a href="#" class><span class="icon">::before "view more"::after</span></a></button>
-                                </header>
-                                <div class="card-container">
-                                    <ul class="card-items2">
-                                        <li class="card-item"><a href="#"><img src="" alt=""><h3>"금성출판사 김무상 대표, 에듀테크 선도기업"<br class="pc">"도약 선언"</h3></a></li>
-                                        <li class="card-item"><a href="#"><img src="" alt=""><h3>"56년 출판사에 스타트업 DNA 심다"<br class="pc">"도약 선언"</h3></a></li>
-                                        <li class="card-item"><a href="#"><img src="" alt=""><h3>"금성출판사 '주 4.5일 근무제' 도입"</h3></a></li>
-                                    </ul>
-                                </div>
-                                <div class="half-circle left">
-                                    <span>
-                                        ::before
-                                        ::after
-                                    </span>
-                                </div>
-                                <div class="half-circle right">
-                                    <span>
-                                        ::before
-                                        ::after
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="bannerSection" class="contents-wrap">
-                            <div class="inner-con">
-                                <div class="bg-container"></div>
-                                <div class="con-text">
-                                    <h1>
-                                        <p>"교육의 힘" <span class="sty2">을 믿습니다.</span></p>
-                                        <p>"사람의 힘" <span class="sty2">을 믿습니다.</span></p>
-                                    </h1>
-                                    <p class="sub-title">"금성은 교육과 사람의 힘으로 세상을 바꿉니다."<br>"사람과 공간, 그리고 콘텐츠를"<br>"연결하는 플랫폼으로 더 많은 아이들,"<br>"그리고 선생님과 함께 성장합니다."</p>
-                                </div>
-                                <div class="icon-text-container">
-                                    <div class="inner-con">
-                                        <ul class="icon-text-con">
-                                            <li><p class="title en">people</p><p class="content">"아이들과 선생님의"<br>"성장을 함께합니다."</p></li>
-                                            <li><p class="title en">Space</p><p class="content">"아름다운 학습 공간을"<br>"만들어 나갑니다."</p></li>
-                                            <li><p class="title en">Platform</p><p class="content">"사람과 공간,"<br>"그리고 컨텐츠를 연결합니다."</p></li>
-                                            <li></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="careerCon" class="contents-wrap career">
-                            <div class="inner-con">
-                                <header>
-                                    <p class="category">Career & Partner</p>
-                                    <h2 class="title">"함께, 더 멀리 나아갑니다"<p>채용 & 사업제휴</p></h2>
-                                </header>
-                                <ul class="border-cards">
-                                    <li class="border-card left">
-                                        <h3 class="en">CAREER</h3>
-                                        <div class="card-con">
-                                            <p>어제와 다른 오늘,</p>
-                                            <p>금성에서 여러분을 기다리고 있습니다.</p>
-                                        </div>
-                                        <hr>
-                                        <button><a href="#" class>직원 채용</a></button>
-                                        <button><a href="#" class>선생님 채용</a></button>
-                                    </li>
-                                    <li class="border-card right"></li>
-                                    <h3 class="en">PARTNER</h3>
-                                    <div class="card-con">
-                                        <p>새로운 교육 생태계를 함께 만들어 갈</p>
-                                        <p>파트너를 모십니다.</p>
-                                    </div>
-                                    <hr>
-                                    <button><a href="#"class>제휴 문의</a></button>
-                                </ul>
-                            </div>
-                            <div class="half-circle left"><span></span></div>
-                            <div class="half-circle right"><span>::before ::after</span></div>
-                        </div>
-                    </div>
-                </div>
-                <footer>
-                    <div class="inner-con">
-                        <div class="top-con">
-                            <div class="family-con">
-                                <h5 class="title en">FAMILY SITE</h5>
-                                <ul class="footer-famuly">
-                                    <li><a href="#">푸르넷 공부방</a></li>
-                                    <li><a href="#">초등 티칭허브</a></li>
-                                    <li><a href="#">푸르넷 아이스쿨</a></li>
-                                    <li><a href="#">중고등 티칭허브</a></li>
-                                    <li><a href="#">English Buddy</a></li>
-                                    <li><a href="#">티칭백과</a></li>
-                                    <li><a href="#">푸르넷 에듀</a></li>
-                                    <li><a href="#">금성도서몰</a></li>
-                                    <li><a href="#">금성교과서</a></li>
-                                    <li><a href="#">금성문화재단</a></li>
-                                </ul>
-                            </div>
-                            <ul class="footer-menus">
-                                <li><a href="#">고객센터</a></li>
-                                <li><a href="#">상담전화 안내</a></li>
-                                <li><a href="#">이용약관</a></li>
-                                <li><a href="#">개인정보 취급처리 방침</a></li>
-                                <li><a href="#">사업제휴</a></li>
-                                <li><a href="#">오시는 길</a></li>
+                <!-- 로고영역 -->
+                <div class="inner">
+                    <ul id="gnb"> <!-- .menu -->
+                        <li> 
+                            <a href="#">ABOUT US</a>
+                            <ul class="submenu">
+                                    <li><a href="#">회사소개</a></li>
+                                    <li><a href="#">history</a></li>
+                                    <li><a href="#">금성소식</a></li>
                             </ul>
-                        </div>
-                        <div class="bottom-con">
-                            <h1 class="footer-logo">KUMSUNG</h1>
-                            <p>
-                                "(주)금성출판사 | 서울특별시 마포구 만리재옛길 23 | 고객센터 000-000-0000 | 지점연결 1577-0000"<br>
-                                " Copyright@Kumsung Publishing., Ltd All Right Reserved."
-                            </p>
-                            <div class="sns-container">
-                                <ul class="inner-container">
-                                    <li onclick=""></li>
-                                    <li onclick=""></li>
-                                    <li onclick=""></li>
-                                    <li onclick=""></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-                <div></div>
+                        </li>
+                        <li> 
+                            <a href="#">BUSINESS</a>
+                            <ul class="submenu">
+                                <li><a href="#">Learning Biz</a></li>
+                                <li><a href="#">Contents Biz</a></li>
+                                <li><a href="#">School Biz</a></li>
+                            </ul>
+                        </li>
+                        <li> 
+                            <a href="#">CSR</a>
+                            <ul class="submenu">
+                                    <li><a href="#">금성문화재단 Biz</a></li>
+                            </ul>
+                        </li>
+                        <li> 
+                            <a href="#">CAREER</a>
+                            <ul class="submenu">
+                                    <li><a href="#">직원 채용</a></li>
+                                    <li><a href="#">선생님 채용</a></li>
+                            </ul>
+                        </li>
+                        <li> 
+                            <a href="#">SUPPROT</a>
+                            <ul class="submenu">
+                                    <li><a href="#">submenu01</a></li>
+                                    <li><a href="#">submenu02</a></li>
+                                    <li><a href="#">submenu03</a></li>
+                                    <li><a href="#">submenu04</a></li>
+                                    <li><a href="#">submenu05</a></li>
+                            </ul>
+                        </li>
+                        <ul class="login">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#" class="cart ">장바구니<span class="count">0</span></a></li>
+                        </ul>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </header>
     </div>
 </body>
 </html>
