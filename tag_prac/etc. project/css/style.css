@@ -1,0 +1,64 @@
+*{padding: 0;  margin: 0;}
+html, body{height: 100%;}
+body{background-color: cadetblue;}
+li{ list-style: none; }
+a{ text-decoration: none;  font-size: 14px; }
+
+/* 상단메뉴 */
+#header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    background: white;
+    box-sizing: border-box;
+    /* border-bottom: 1px solid #000; */
+}
+/*로고*/
+#logo{ 
+    padding: 30px;
+    position: absolute;
+    float: left; 
+} /*로고 끝*/
+#gnb{
+    width: 100%;  
+    overflow: hidden;  
+    display: flex;
+}
+/*하위메뉴*/
+#gnb > li{
+    width: 500px;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+#gnb > li:nth-child(1){ margin-left: 500px; }
+#gnb > li:hover{
+    transition-duration: 0.5s;
+    background: white;
+}
+#gnb > li:hover .submenu{
+    height: 250px;
+    transition-duration: 1s;
+    background: white;
+}
+.submenu>li{ line-height: 50px; }
+.submenu{ height: 0; overflow: hidden; }
+/*하위메뉴 끝*/
+/* 로그인 */
+#header .inner .login{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#header .inner .login li{
+    float: right;
+    padding: 30px;
+}
+
+#header .inner .login li:nth-child(1){
+    margin-left: 250px;
+}
