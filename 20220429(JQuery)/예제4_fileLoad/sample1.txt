@@ -1,0 +1,6 @@
+sample1.txt 파일입니댜.
+안녕ㅎ세요
+반갑습니다
+hi!
+text any 
+jquery stop!!!
