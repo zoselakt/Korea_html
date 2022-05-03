@@ -4,68 +4,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/initial.css"/>
-    <link rel="stylesheet" href="css/style1.css"/>
+    <title> 클론코딩 </title>
+    <link rel="stylesheet" href="./css/initial.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>  
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
 </head>
 <body>
-    <div id="wrap"> <!-- #headerbtn -->
-        <header id="header"> <!--gnb-wrapper-->
-            <div class="h-inner">
-                <!-- 로고영역 -->
-                <div id="logo">
-                    <h1><a href="#"><img src="./images/logo_img.png"></a></h1>
+    <div id="nuxt">
+        <div id="layout">
+            <div id="wrap">
+                <div class="slide" data-background="#3498db">
+                    <header id="header"> 
+                        <div class="h-inner">
+                            <!-- 로고영역 -->
+                            <div id="logo">
+                                <h1><a href="#"><img src="./img/logo_img.png"></a></h1>
+                            </div>
+                            <!-- 로고영역 -->
+                            <div class="inner">
+                                <ul id="gnb"> 
+                                    <li> 
+                                        <a href="#" class="header_menu">ABOUT US</a>
+                                        <ul class="submenu">
+                                                <li><a href="#">회사소개</a></li>
+                                                <li><a href="#">history</a></li>
+                                                <li><a href="#">금성소식</a></li>
+                                        </ul>
+                                    </li> 
+                                    <li> 
+                                        <a href="#" class="header_menu">BUSINESS</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Learning Biz</a></li>
+                                            <li><a href="#">Contents Biz</a></li>
+                                            <li><a href="#">School Biz</a></li>
+                                        </ul>
+                                    </li>
+                                    <li> 
+                                        <a href="#" class="header_menu">CSR</a>
+                                        <ul class="submenu">
+                                                <li><a href="#">금성문화재단 Biz</a></li>
+                                        </ul>
+                                    </li>
+                                    <li> 
+                                        <a href="#" class="header_menu">CAREER</a>
+                                        <ul class="submenu">
+                                                <li><a href="#">직원 채용</a></li>
+                                                <li><a href="#">선생님 채용</a></li>
+                                        </ul>
+                                    </li>
+                                    <li> 
+                                        <a href="#" class="header_menu">SUPPROT</a>
+                                        <ul class="submenu">
+                                                <li><a href="#">submenu01</a></li>
+                                                <li><a href="#">submenu02</a></li>
+                                                <li><a href="#">submenu03</a></li>
+                                                <li><a href="#">submenu04</a></li>
+                                                <li><a href="#">submenu05</a></li>
+                                        </ul>
+                                    </li>
+                                    <ul class="login">
+                                        <li><a href="#">로그인</a></li>
+                                        <li><a href="#" class="cart ">장바구니</a></li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- 상단메뉴 -->
+                    <!--상단메뉴 끝-->
+                    <!--섹션1-->
+                    <div class="inside"> <!--inner-->
+                        <div class="items"> <!--maintext-->
+                            <h2> 메인베너</h2>
+                            <p>메인베너여백</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- 로고영역 -->
-                <div class="inner">
-                    <ul id="gnb"> <!-- .menu -->
-                        <li> 
-                            <a href="#">ABOUT US</a>
-                            <ul class="submenu">
-                                    <li><a href="#">회사소개</a></li>
-                                    <li><a href="#">history</a></li>
-                                    <li><a href="#">금성소식</a></li>
-                            </ul>
-                        </li>
-                        <li> 
-                            <a href="#">BUSINESS</a>
-                            <ul class="submenu">
-                                <li><a href="#">Learning Biz</a></li>
-                                <li><a href="#">Contents Biz</a></li>
-                                <li><a href="#">School Biz</a></li>
-                            </ul>
-                        </li>
-                        <li> 
-                            <a href="#">CSR</a>
-                            <ul class="submenu">
-                                    <li><a href="#">금성문화재단 Biz</a></li>
-                            </ul>
-                        </li>
-                        <li> 
-                            <a href="#">CAREER</a>
-                            <ul class="submenu">
-                                    <li><a href="#">직원 채용</a></li>
-                                    <li><a href="#">선생님 채용</a></li>
-                            </ul>
-                        </li>
-                        <li> 
-                            <a href="#">SUPPROT</a>
-                            <ul class="submenu">
-                                    <li><a href="#">submenu01</a></li>
-                                    <li><a href="#">submenu02</a></li>
-                                    <li><a href="#">submenu03</a></li>
-                                    <li><a href="#">submenu04</a></li>
-                                    <li><a href="#">submenu05</a></li>
-                            </ul>
-                        </li>
-                        <ul class="login">
-                            <li><a href="#">로그인</a></li>
-                            <li><a href="#" class="cart ">장바구니<span class="count">0</span></a></li>
-                        </ul>
-                    </ul>
+                <hr style="border: 1px solid #000;">
+                <!--섹션2-->
+                <div class="slide" data-background="#27ae60"><!--mainbanner-->
+                    <div class="inside"><!--inner-->
+                        <div class="items">
+                            <div class="text-box">
+                                <h2>섹션2- 비디오태그 - mp4</h2>
+                            <p>보조 메세지 제공합니다.</p> 
+                            <a href="#" class="view">view</a>
+                            </div>
+                            <div class="video-box">
+                                <video muted="muted" width="100%" autoplay="autoplay" loop="loop">
+                                    <source src="./img/sec2.mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="border: 1px solid #000;">
+                <!--섹션3-->
+                <div class="slide" data-background="#e74c3c">
+                    <div class="inside">
+                        <div class="items">
+                            <h2>좌 -글씨 / 우 - 그림</h2>
+                            <img src="./img/4.jpg">
+                            <br> <a href="#" class="view">view</a>
+                        </div>
+                    </div>
+                </div>
+                <hr style="border: 1px solid #000;">
+                <!--섹션4-->
+                <div class="slide" data-background="#e67e22">
+                    <div class="inside">
+                        <div class="items">
+                            <h2>portfolio no.4</h2>
+                            <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt incidunt sint excepturi, odio velit totam autem perspiciatis delectus quisquam quam reprehenderit ullam aliquam, labore aut quidem quia maxime, dolorum provident!
+                            <br> <a href="#" class="view">view</a>
+                        </div>
+                    </div>
+                </div>
+                <hr style="border: 1px solid #000;">
+                <!--섹션5-->
+                <div class="slide" data-background="#9b59b6">
+                    <div class="inside">
+                        <div class="items">
+                            <h2>portfolio no.5</h2>
+                            <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt incidunt sint excepturi, odio velit totam autem perspiciatis delectus quisquam quam reprehenderit ullam aliquam, labore aut quidem quia maxime, dolorum provident!
+                            <br> <a href="#" class="view">view</a>
+                        </div>
+                    </div>
+                </div>
+                <hr style="border: 1px solid #000;">
+                <!--섹션6-->
+                <div class="slide" data-background="#34495e">
+                    <div class="inside">
+                        <div class="items">
+                            <h2>portfolio no.6</h2>
+                            <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt incidunt sint excepturi, odio velit totam autem perspiciatis delectus quisquam quam reprehenderit ullam aliquam, labore aut quidem quia maxime, dolorum provident!
+                            <br> <a href="#" class="view">view</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </header>
+        </div>
     </div>
 </body>
 </html>

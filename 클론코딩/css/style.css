@@ -1,4 +1,218 @@
 @charset "UTF-8";
+:root {
+ --content-width: 100%;
+}
 *{margin: 0; padding: 0;}
 html, body{height: 100%;}
-a{color: #666;}
+ul, ol{list-style: none;}
+body{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 1s ease;
+}
+#layout{
+    width: var(--content-width);
+    min-height: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*공통*/
+.view{
+    display: inline-block; 
+    text-transform: capitalize;
+    color: #c8392b;
+    background: #fff;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+/*내부 전체속성*/ 
+#layout #wrap {
+    width: 100%;
+    padding-top: 165px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/*섹션속성*/
+#wrap .slide {
+    padding: 45px 0;
+    min-height: 650px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+#wrap .slide .inside{
+    width: var(--content-width);
+    min-height: 650px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+.slide.on{
+    width: 100%;
+    height: 100%;
+}
+.slide.on .inside{
+    opacity: 1;
+}
+.slide .inside .items h2{
+    font-size: 24px;
+}
+/*섹션 속성끝*/
+
+/* 상단메뉴 */
+#header{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* border-bottom: 1px solid #000; */
+}
+#header .h-inner{
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    float: left;
+    z-index: 1000;
+    position: relative;
+}
+/*로고*/
+#header .h-inner #logo{ 
+    padding: 30px;
+    position: absolute;
+    float: left; 
+    cursor: pointer;
+} 
+#header .h-inner .inner #logo img{
+    display: inline-block;
+    height: 30px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    vertical-align: middle;
+} /*로고 끝*/
+#header .h-inner .inner #gnb{
+    width: 100%;  
+    top: 0;
+    left: 0;
+    overflow: hidden;  
+    display: flex;
+    z-index: 10000;
+    background: #fff;
+}
+/* 하단메뉴*/
+#header .h-inner .inner #gnb > li{
+    width: 400px;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+#gnb > li:nth-child(1){ margin-left: 450px; }
+#header .h-inner .inner #gnb > li:hover{
+    transition-duration: 0.5s;
+    background: white;
+}
+#header .h-inner .inner #gnb li:hover .submenu{
+    height: 250px;
+    transition-duration: 1s;
+    text-align: center;
+    margin: 0;
+    background: white;
+}
+.submenu>li{ line-height: 50px; }
+.submenu{ height: 0; overflow: hidden; }
+/*하위메뉴 끝*/
+/* 로그인 */
+#header .inner .login{
+    width: 35%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#header .inner .login li{
+    float: right;
+    padding: 10px;
+}
+
+#header .inner .login li:nth-child(1){
+    margin-left: 100px;
+}
+/* 로그인 끝 */
+
+/*섹션 1*/
+.slide:nth-child(1) .inside{
+    padding-top: 165px;
+    box-sizing: border-box;
+}
+/*섹션2*/
+#wrap .slide:nth-child(3) .inside .items{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+#wrap .slide:nth-child(3) .inside .items .video-box {
+    position: absolute;
+    top: -45px;
+    right: 0;
+    bottom: -45px;
+    left: 0;
+}
+#wrap .slide:nth-child(3) .inside .items .text-box{
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    float: left;
+} 
+#wrap .slide:nth-child(3) .inside .items .video-box video{
+    z-index: -1000;
+}
+
+
+/* 섹션3 */
+#wrap .slide:nth-child(5) .inside .items{
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+}
+#wrap .slide:nth-child(5) .inside .items img{
+    background-repeat: no-repeat; 
+    float: right;
+    width: 300px;
+    
+}
+#wrap .slide:nth-child(5) .inside .items h2{
+    float: left;
+    color: #000;
+}
+#wrap .slide:nth-child(5) .inside .items .view{
+    width: 30px;
+    height: 30px;
+    background: #000;
+}
+/*네번쨰 섹션*/
+#wrap .slide:nth-child(7){
+    float: left;
+}
+#wrap .slide:nth-child(7) .inside .box.img{
+    float: right;
+    background-image: url(../img/4.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
