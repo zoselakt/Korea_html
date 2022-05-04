@@ -69,7 +69,6 @@ body{
 #header{ /*메뉴 최상단 속성*/
     position: fixed;
     width: 100%;
-    height: 100%;
     top: 0;
     overflow: hidden;
     box-sizing: border-box;
@@ -162,11 +161,13 @@ body{
     z-index: -100;
 }
 /*섹션2*/
+.slide:nth-child(2) .inside{
+    overflow: hidden;
+}
 #wrap .slide:nth-child(2) .inside .items{
     float: left;
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 #wrap .slide:nth-child(2) .inside .items .video-box {
     position: absolute;
@@ -183,6 +184,9 @@ body{
 } 
 
 /* 섹션3 */
+.slide:nth-child(3) .inside{
+    overflow: hidden;
+}
 #wrap .slide:nth-child(3) .inside .items{
     position: relative;
     width: 100%;
@@ -222,6 +226,9 @@ body{
     position: relative;
 }
 /*네번쨰 섹션*/
+#wrap .slide:nth-child(4) .inside{
+
+}
 #wrap .slide:nth-child(4) .inside .items{
     overflow: hidden;
     position: relative;
@@ -266,4 +273,20 @@ body{
     height: 30px;
     background: #000;
     position: relative;
+}
+/*다섯번째 섹션*/
+#wrap .slide:nth-child(6) .inside{
+    overflow: hidden;
+}
+
+#wrap .slide:nth-child(6) .inside .items{
+    position: relative;
+    float: left;
+}
+#wrap .slide:nth-child(6) .inside .items .text-box{
+
+}
+
+#wrap .slide:nth-child(6) .inside .items .img-box{
+
 }
