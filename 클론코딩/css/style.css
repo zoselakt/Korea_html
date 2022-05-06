@@ -9,7 +9,7 @@ body{
     color: #fff;
     font-size: 18px;
     text-align: center;
-    background: cadetblue ;
+    background: cadetblue;
 }
 #layout{
     width: var(--content-width);
@@ -325,11 +325,129 @@ body{
     position: relative;
 }
 /*여섯번쨰 섹션*/
+#wrap .slide:nth-child(6) .inside{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background: #f1f1f1;
+}
+#wrap .slide:nth-child(6) .inside .items{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#wrap .slide:nth-child(6) .inside .items .text-box{
+    float: left;
+    width: 100%;
+    height: 50%;
+    margin-left: 10px;
+}
+#wrap .slide:nth-child(6) .inside .items .text-box .category{
+    position: relative;
+    display: flex;
+    line-height: 50px;
+    top: 40%;
+    color: #2b66f6;
+    font-size: 20px;
+}
+#wrap .slide:nth-child(6) .inside .items .text-box .title{
+    position: absolute;
+    display: flex;
+    top: 30%;
+    color: #000;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 34px;
+}
+#wrap .slide:nth-child(6) .inside .items .text-box .more{
+    float: right;
+}
+#wrap .slide:nth-child(6) .inside .items .img-box{
+    position: relative;
+    float: right;
+    width: 100%;
+    height: 50%;
+}
+#wrap .slide:nth-child(6) .inside .items .img-box .card-items2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
+#wrap .slide:nth-child(6) .inside .items .img-box .card-items2 .card-item{
+    width: calc(25% - 10px);
+    height: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    padding-left: 30px;
+}
+#wrap .slide:nth-child(6) .inside .items .img-box .card-items2 .card-item a img{
+    transition: .5s;
+    transform-origin: center;
+    transform: scale(1.0, 1.0);
+    box-sizing: border-box;
+    border: 1px solid #000;
+    width: 100%;
+    height: 100%;
+}
 
-
-
-
+#wrap .slide:nth-child(6) .inside .items .img-box .card-items2 .card-item a img:hover{
+    transform: scale(1.5, 1.5);
+    width: 100%;
+    height: 100%;
+}
+#wrap .slide:nth-child(6) .inside .items .img-box .card-items2 .card-item a h3{
+    position: absolute;
+    text-align: center;
+    width: 25%;
+}
+/*일곱번째 섹션*/
+#wrap .slide:nth-child(7) .inside{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#wrap .slide:nth-child(7) .inside .items{
+    width: 100%;
+    height: 100%;
+}
+#wrap .slide:nth-child(7) .inside .items .img-box img{
+    width: 100%;
+}
+#wrap .slide:nth-child(7) .inside .items .text-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+#wrap .slide:nth-child(7) .inside .items .text-box h2{
+    width: 50%;
+    font-size: 32px;
+    font-weight: bold;
+}
+#wrap .slide:nth-child(7) .inside .items .text-box p{
+    width: 50%;
+    font-size: 24px;
+    font-weight: 500;
+}
+#wrap .slide:nth-child(7) .inside .items .section-img{
+    width: 100%;
+    height: 100%;
+}
+#wrap .slide:nth-child(7) .inside .items .section-img .bottomimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#wrap .slide:nth-child(7) .inside .items .section-img img{
+    width: 50%;
+    height: 50%;
+}
 
 /*footer*/
 @media (max-width: 599px){
