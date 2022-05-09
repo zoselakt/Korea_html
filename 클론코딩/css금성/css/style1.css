@@ -805,6 +805,62 @@ div.header_wrap div.hamburgerBtn{
 #bannerContents_2{
     background-color: #f8fafb;
 }
+@media(max-width:599px){
+    #bannerContents_2 div.books{
+        top: 57%;
+        right: 0;
+    }
+}
+#bannerContents_2 div.books{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    display: inline-block;
+    width: min-content;
+}
+@media (max-width: 599px){
+    #bannerContents_2 div.books ul.book-list-0 {
+    margin-left: 80px;
+    }
+}
+@media (max-width: 599px){
+    #bannerContents_2 div.books ul {
+        display: flex;
+        width: auto;
+    }
+}
+.section-con>div.books ul.book-list-0 {
+    margin-left: 175px;
+}
+.section-con>div.books ul {
+    display: inline-block;
+    width: 700px;
+    margin-bottom: 1%;
+}
+@media (max-width: 599px){
+    #bannerContents_2 div.books ul li {
+        width: 73px;
+        height: 96px;
+        background-size: contain;
+        white-space: nowrap;
+    }
+}
+.section-con.on div.books li {
+    margin-left: 0;
+    opacity: 1;
+}
+.section-con>div.books ul li {
+    display: block;
+    width: 164px;
+    height: 213px;
+    float: left;
+    margin-right: 11px;
+    background: url(/) 50% 50%/cover no-repeat;
+    margin-left: -35px;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+
 /*섹션 -4 card컨테이너*/
 #cardContainer{
     padding: 60px 0 90px;
