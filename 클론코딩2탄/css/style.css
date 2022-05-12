@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{margin: 0; padding: 0;}
+html, body{height: 100%;}
+ul, ol{list-style: none;}
+body{background: cadetblue;}
+a{color: #666;}
 /*공통*/
 /*버튼*/
 .button{
@@ -192,9 +198,10 @@ section > article p{
 section .row{
     position: relative;
     overflow: hidden;
-    width: 1200px;
+    width: 920px;
     min-height: 1000px;
     margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 section .row .text{
     padding: 30px;
@@ -207,11 +214,16 @@ section .row .text p{
     margin-bottom: 6px;
     font-size: 13px;
     color: #888;
+    padding-left: 25px;
 }
 section .row .text h2{
     margin-bottom: 30px;
     font-size: 32px;
     font-weight: 600;
+    padding-left: 25px;
+}
+section .row .text .menu{
+    text-align: center;
 }
 section .row .text .menu li{
     display: inline-block;
@@ -223,14 +235,14 @@ section .row .text .menu li a{
     cursor: pointer;
     text-decoration: none;
     border-radius: 25px;
-    padding: 15px 20px;
-    font-size: 18px;
+    padding: 10px 15px;
+    font-size: 15px;
     color: #1c1c1c;
     text-align: center;
 }
 section .row .img{
     float: left;
-    padding: 0 30px;
+    padding: 0 52px;
     width: 100%;
 }
 section .row .img .img-wrap{
@@ -241,14 +253,31 @@ section .row .img .img-wrap{
     height: 320px;
 }
 section .row .img .img-wrap li{
-    width: 250px;
+    width: 225px;
 }
-section .row .img .img-wrap li img{
+section .row .img .img-wrap li > a{
+    position: relative;
+    display: inline-block;
+    width: 182px;
+    height: 182px;
+    overflow: hidden;
+
+}
+section .row .img .img-wrap li > a:hover img{
+    transform: scale(1.2);
+}
+section .row .img .img-wrap img{
+    position: absolute;
     width: 180px;
     height: 180px;
     border: 1px solid rgba(0,0,0,.2);
+    transition: .5s;
 }
-section .row .img .img-wrap li > span{
+section .row .img .img-wrap .img-text{
+    height: 90px;
+    width: 180px;
+}
+section .row .img .img-wrap li div > span{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,6 +297,40 @@ section .row .img .img-wrap .spanbot{
 section .row .img .img-wrap .spanprice{
     font-size: 15px;
     line-height: 20px;
+    font-weight: bold;
+    float: left;
+}
+section .row .img .img-wrap .listbutton{
+    position: relative;
+}
+section .row .img .img-wrap .cart{
+    display: inline-block;
+    position: absolute;
+    background-image: url(../img/listbutton.jpg);
+    background-size: cover;
+    width: 30px;
+    height: 25px;
+    right: 2px;
+    bottom: 19px;
+    cursor: pointer;
+}
+section .row .more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+section .row .more >a{
+    width: 250px;
+    height: 50px;
+    color: #000;
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
 }
 /*메뉴섹션끝*/
