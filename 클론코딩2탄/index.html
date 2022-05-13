@@ -7,6 +7,7 @@
     <title> 클론2탄 </title>
     <link rel="stylesheet" href="./css/initial.min.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
@@ -184,12 +185,14 @@
                 </div>
             </div>
         </div>
-        <section id="healthy">
-            <div class="goodok">
-                <p>매일 바뀌는 메뉴로 지속가능한 관리</p>
-                <h2>케이식단 정기구독</h2>
-                <div class="column">
-                    <div class="inner">
+        <section id="healthy"><!-- carousel -->
+            <p>매일 바뀌는 메뉴로 지속가능한 관리</p>
+            <h2>케이식단 정기구독</h2>
+            <div class="goodok"> <!--carousel-inner-->
+                <img src="./img/left.png" alt="prev" class="goodokprev">
+                <img src="./img/right.png" alt="next" class="goodoknext">
+                <div class="column"> <!-- ul -->
+                    <div class="inner"> <!-- li -->
                         <a href="#"><img src="./img/healthy.jpg" alt="img01"></a>
                         <p>당질 제한 레시피</p>
                         <h3>저당식단</h3>
@@ -197,29 +200,61 @@
                 </div>
                 <div class="column">
                     <div class="inner">
-                        <a href="#"><img src="./img/healthy2.jpg" alt="img01"></a>
+                        <a href="#"><img src="./img/healthy2.jpg" alt="img02"></a>
                         <p>믿고 먹을수 있는</p>
                         <h3>당뇨식단</h3>
                     </div>
                 </div>
                 <div class="column">
                     <div class="inner">
-                        <a href="#"><img src="./img/healthy3.png" alt="img01"></a>
+                        <a href="#"><img src="./img/healthy3.png" alt="img03"></a>
                         <p>살빼라</p>
                         <h3>건강식단</h3>
                     </div>
                 </div>
                 <div class="column">
                     <div class="inner">
-                        <a href="#"><img src="./img/healthy3.png" alt="img01"></a>
+                        <a href="#"><img src="./img/healthy3.png" alt="img04"></a>
                         <p>나만의 맞춤 건강식</p>
                         <h3>My그리팅</h3>
                     </div>
                 </div>
+
+                <div class="column">
+                    <div class="inner">
+                        <a href="#"><img src="./img/healthy3.png" alt="img04"></a>
+                        <p>나만의 맞춤 건강식</p>
+                        <h3>My그리팅</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <a href="#"><img src="./img/healthy3.png" alt="img04"></a>
+                        <p>나만의 맞춤 건강식</p>
+                        <h3>My그리팅</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <a href="#"><img src="./img/healthy3.png" alt="img04"></a>
+                        <p>나만의 맞춤 건강식</p>
+                        <h3>My그리팅</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="inner">
+                        <a href="#"><img src="./img/healthy3.png" alt="img04"></a>
+                        <p>나만의 맞춤 건강식</p>
+                        <h3>My그리팅</h3>
+                    </div>
+                </div>
+
             </div>
-            <div class="goodok">
+            <div class="foodplan">
                 <p>빠르고 확실한 목표가 있다면</p>
                 <h2>6일 완성 챌린지 식단</h2>
+                <img src="./img/left.png" alt="prev" class="btn prev">
+                <img src="./img/right.png" alt="next" class="btn next">
                 <div class="column">
                     <div class="inner">
                         <a href="#"><img src="./img/healthy.jpg" alt="img01"></a>
@@ -285,7 +320,7 @@
                         </div>
                         <div class="slidetext">
                             <p>부드러운 탄산과 향긋한 풍미</p>
-                            <h5>[르쁘띠 샤방] 논알콜 스파클링 와인 2종</h5>
+                            <a href="#">[르쁘띠 샤방] 논알콜 스파클링 와인 2종</a>
                             <del><p>13,500원</p></del>
                             <h5>12,150원</h5>
                             <button type="button" class="listbutton">
@@ -294,7 +329,7 @@
                         </div>
                         <div class="slidetext">
                             <p>부드러운 탄산과 향긋한 풍미</p>
-                            <h5>[르쁘띠 샤방] 논알콜 스파클링 와인 2종</h5>
+                            <a href="#">[르쁘띠 샤방] 논알콜 스파클링 와인 2종</a>
                             <del><p>13,500원</p></del>
                             <h5>12,150원</h5>
                             <button type="button" class="listbutton">
@@ -303,7 +338,7 @@
                         </div>
                         <div class="slidetext">
                             <p>부드러운 탄산과 향긋한 풍미</p>
-                            <h5>[르쁘띠 샤방] 논알콜 스파클링 와인 2종</h5>
+                            <a href="#">[르쁘띠 샤방] 논알콜 스파클링 와인 2종</a>
                             <del><p>13,500원</p></del>
                             <h5>12,150원</h5>
                             <button type="button" class="listbutton">
@@ -311,9 +346,8 @@
                             </button>
                         </div>
                     </div>
-                    <div class="img">
+                    <div class="skillimg">
                         <h2>깐깐하게 엄선된 신상품</h2>
-                        <p>지금 사면 혜택도, 건강도 득템</p>
                         <ul class="img-wrap">
                             <li>
                                 <a href="#"><img src="./img/menu1.jpg" alt="img01"></a>
@@ -413,6 +447,8 @@
         <section id="mybrand">
             <div class="goodok">
                 <h2>그리팅이 고른 착한 브랜드</h2>
+                <img src="./img/left.png" alt="prev" class="btn prev">
+                <img src="./img/right.png" alt="next" class="btn next">
                     <div class="column">
                         <div class="inner">
                             <a href="#"><img src="./img/mybrand1.jpg" alt="img01"></a>
@@ -447,12 +483,33 @@
         <section id="magazine">
             <div class="row">
                 <h2>그리팅 매거진</h2>
+                <img src="./img/left.png" alt="prev" class="btn prev">
+                <img src="./img/right.png" alt="next" class="btn next">
                 <div class="column">
-                    <div class="img">
-                        <a href="#"><img src="./img/healthy.jpg" alt="img01"></a>
-                        <a href="#"><img src="./img/healthy2.jpg" alt="img01"></a>                                <a href="#"><img src="./img/healthy3.png" alt="img01"></a>
-                        <a href="#"><img src="./img/healthy3.png" alt="img01"></a>
-                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine1.jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine2.jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine3.jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine4.jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine5.jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine6.jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine7.jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine8.jpg" alt=""></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="./img/magazine9.jpg" alt=""></a></div>
+                        </div>
+                        <!-- ADD PAGINATION -->
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                      <script type="text/javascript">
+                          var swiper = new Swiper(".mySwiper", {
+                              pagination:{
+                                  el: '.swiper-pagination',
+                                  clickable: true,
+                              },
+                          });
+                      </script>
                 </div>
                 <div class="bottom">
                     <div class="text-left">
@@ -474,18 +531,17 @@
             <div class="container">
                 <div class="row">
                     <div class="column footer-logo">
-                        <h3>Logo</h3>
+                        <img src="./img/img_header_logo.png">
                     </div>
                     <div class="column">
                         <h4>siteMap</h4>
                         <ul>
                             <li><a href="#intro">Home</a></li>
-                            <li><a href="#myprofile">My Profile</a></li>
-                            <li><a href="#portfolio">PortFolio</a></li>
-                            <li><a href="#myskill">MySkill</a></li>
-                            <li><a href="#ourclients">OurClients</a></li>
-                            <li><a href="#mytool">My Tools</a></li>
-                            <li><a href="#project">Project</a></li>
+                            <li><a href="#menu-section">menu</a></li>
+                            <li><a href="#healthy">healthy</a></li>
+                            <li><a href="#myskill">menu2</a></li>
+                            <li><a href="#mybrand">mybrand</a></li>
+                            <li><a href="#magazine">magazine</a></li>
                         </ul>
                     </div>
                     <div class="column">

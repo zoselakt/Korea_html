@@ -1,39 +1,52 @@
-'use strict'
-$(function(){
-    const intervalNum = 150;
-    $("nav ul li a", "back-to-top a, a.button, #footer ul li a").click(function(){
-        // console.log($(this.hash));
-        // console.log($(this.hash).offset().top);
-        let thisHash = $(this.hash);
+$(function() { 
+  const widthNum = 275; 
+  const caInner = $("#healthy .goodok .column");
+  let liLeng = $("#healthy .column .inner", caInner).length;
 
-        //방법1 //즉시 작동이 안됨 / 애니메이션 종료후 이동
-        // let isAni = $("html, body").is(":animated")
-        // if(!isAni){
-        //     $("html, body").animate({scrollTop : thisHash.offset().top}, 1500);
-        // }
+  // li의 개수로 ul.column의 너비를 설정
+  $("#healthy .goodok .column .inner").css("width", widthNum + liLeng);
 
-        //방법2 // 즉시 작동 가능
-        $("html, body").stop();
-        $("html, body").animate({scrollTop : thisHash.offset().top}, 1500); 
-    });
+  // next button script
+  $(".goodoknext").click(function() {
+    let caInMarginLeft = parseInt($(caInner).css("margin-left"));
+    let isAni = $(caInner).is(":animated");
+    if (!isAni) {
+      $(caInner).animate({marginLeft: caInMarginLeft - widthNum}, "slow", "swing", function() {
+        $("#healthy .goodok .column .inner:first a").appendTo("#healthy .goodok .column .inner");
+        $(caInner).css("margin-left", -widthNum);
+      })
+    };
+  });
 
-    $(window).scroll(function(){
-        let backTop = $(".back-to-top");
-        if($(this).scrollTop() == 0){
-            backTop.removeClass("on");
-        }else{
-            backTop.addClass("on");
-        }
-        
-        let wHeight = $(window).height();
-        let scTop = $(this).scrollTop();
-        $("section").each(function(){
-            // console.log($(this).offset())
-            let thisElem = $(this);
-            let thisOffset = $(this).offset();
-            if(thisOffset.top <= scTop + intervalNum && scTop <= thisOffset.top + wHeight){
-                thisElem.addClass("active");
-            }
-        })
-    })
-});
+  $(".goodokprev").click(function() {
+    let caInMarginLeft = parseInt($(caInner).css("margin-left"));
+    let isAni = $(caInner).is(":animated");
+    if (!isAni) {
+      $(caInner).animate({marginLeft: caInMarginLeft + widthNum}, "slow", "swing", function() {
+        $("#healthy .goodok .column .inner a img:last").prependTo("#healthy .goodok .column .inner");
+        $(caInner).css("margin-left", -widthNum);
+      })
+    };
+  });
+
+  let auto = function(){
+    timerID = setInterval(function(){
+      $(".goodoknext").trigger("click");
+    },3000);
+    return timerID;
+  };
+
+  auto()
+
+  $("#healthy .goodok, .goodokprev, .goodoknext").on({
+    mouseenter: function(){
+      clearInterval(timerID);
+    },
+    mouseleave: function(){
+      timerID = setInterval(function(){
+        $(".goodoknext").trigger("click");
+      },3000);
+    }
+  });
+
+}); // end
