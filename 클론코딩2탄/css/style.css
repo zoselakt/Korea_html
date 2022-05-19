@@ -29,7 +29,6 @@ h2{
     padding: 8px 32px;
     margin: 10px;
     border-radius: 50px;
-    text-transform: uppercase;
     background: #18d26e;
     transition: 0.5s;
     text-decoration: none;
@@ -41,10 +40,10 @@ h2{
 .cart:hover{
     opacity: 1;
 }
-/* .button:hover{
+.button:hover{
     background: white;
-    color: #18d26e;
-} */
+    color: #000;
+}
 /*버튼*/
 /*탑버튼*/
 .back-to-top{
@@ -59,9 +58,6 @@ h2{
     transition: 1s;
     opacity: 0;
     z-index: 800;
-}
-.on{
-    opacity: 1;
 }
 .back-to-top a{
     display: flex;
@@ -123,6 +119,50 @@ input[type=checkbox]#gnbcheck{
 }
 /*햄버거 끝*/
 /*타이틀*/
+/*right_fix*/
+.right_fixbox{
+    width: 120px;
+    background-color: #fff;
+    border: 1px solid #111;
+    position: fixed;
+    top: 340px;
+    margin-top: -1px;
+    right: 0;
+    z-index: 800;
+    opacity: 0;
+    transition: 1s;
+}
+.right_fixbox .chatting{
+    position: relative;
+}
+.right_fixbox .chatting .chat_btn{
+    display: flex;
+    width: 100%;
+    height: 110px;
+    align-items: center;
+    justify-content: center;
+}
+.right_fixbox .chatting .chat_btn .text{
+    display: block;
+    font-style: 13px;
+    color: #000;
+}
+.right_fixbox .chatting .chat_btn::before{
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(../img/bottom.png);
+}
+.right_fixbox .chatting .chat_btn::after{
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(../img/bottom.png);
+}
+/*right_fix*/
+.on{
+    opacity: 1;
+}
 /*공통*/
 /*해더*/
 #header{
@@ -339,23 +379,28 @@ section .row .more >a{
     margin: 0 auto;
     overflow: hidden;
 }
-#middlebanner .mid-wrap .backimg img{
-    height: 500px;
+#middlebanner .mid-wrap{
+    height: 600px;
+    background: rgb(222, 300, 230);
+}
+#middlebanner .mid-wrap .midimg{
+    float: right;
+    width: 50%;
+    padding: 30px;
+}
+#middlebanner .mid-wrap .midimg img{
     width: 100%;
+    height: 500px;
 }
 #middlebanner .mid-wrap .midtext{
+    width: 40%;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    width: 100%;
-    top: 0;
+    text-align: center;
+    top: 250px;
 }
-#middlebanner .mid-wrap .midtext a{
-    position: absolute;
+#middlebanner .mid-wrap .midtext h2{
     font-size: 30px;
-    color: #333;
+    color: #000;
     font-weight: 700;
     text-decoration: none;
 }
@@ -491,16 +536,16 @@ section#healthy .foodplan{
 }
 
 /*미드배너2*/
-#middlebanner .mid-wrap .backimg2{
+#middlebanner .mid-sec{
+    background: rgb(255, 227, 70);
     width: 100%;
-    background: linear-gradient(to right, #1879ec, #17ABF3);
-    /* background: rgb(24, 121, 236); 1879EC
-    background: rgb(23, 171, 243); 17ABF3*/
+    height: 600px;
 }
-#middlebanner .mid-wrap .backimg2 img{
-    height: 500px;
-    width: 50%;
-    padding-left: 400px;
+#middlebanner .mid-sec .backimg2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
 }
 /*미드배너2*/
 /*myskill*/

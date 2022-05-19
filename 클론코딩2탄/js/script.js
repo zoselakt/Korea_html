@@ -53,5 +53,40 @@ $(function() {
         }
       });
     
-    }); // end
+    }); // loop end
+
+        //rightfix
+  $(window).scroll(function(){
+    let fixbox = $(".right_fixbox");
+    if($(this).scrollTop() == 0){
+      fixbox.removeClass("on");
+    }else{
+      fixbox.addClass("on");
+    }
+
+    let wHeight = $(window).height();
+    let scTop = $(this).scrollTop();
+    $("section").each(function(){
+        let thisElem = $(this);
+        let thisOffset = $(this).offset();
+        if(thisOffset.top <= scTop + intervalNum && scTop <= thisOffset.top + wHeight){
+            thisElem.addClass("active");
+        }
+    })
+ })
+
+ $("hobby").css({"display" : "none", "height" : 0});
+ $(".chatting .chat_btn").click(function(){
+     let thisElem = $(this);
+     $("hobby").each(function(){
+         if(parseInt($(this).css("height")) ==100){
+             $(this).animate({height : 0}, 300, function (){
+                 $(this).css("display", "none");
+             });
+         };
+     });
+     $("+a", thisElem).css("display", "block").animate({height : 200}, 400);
+ });
+
+
 }); 
