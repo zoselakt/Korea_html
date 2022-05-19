@@ -11,6 +11,7 @@
 
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
 </head>
 <body>
     <div class="back-to-top">
@@ -28,18 +29,17 @@
         <nav id="gnb">
             <label for="gnbcheck" id="mobile-close-btn"></label>
             <ul class="category">
-                <a href="#">카테고리</a>
                 <li><a href="#intro">케어식단</a></li>
-                <li><a href="#myprofile">베스트</a></li>
-                <li><a href="#portfolio">할인</a></li>
+                <li><a href="#menu-section">베스트</a></li>
+                <li><a href="#healthy">할인</a></li>
                 <li><a href="#myskill">브랜드관</a></li>
-                <li><a href="#ourclients">기획전</a></li>
-                <li><a href="#mytool">선물추천</a></li>
-                <li><a href="#project">이벤트</a></li>
+                <li><a href="#mybrand">기획전</a></li>
+                <li><a href="#magazine">선물추천</a></li>
+                <li><a href="#">이벤트</a></li>
             </ul>
             <ul class="login">
                 <li><a href="#">로그인</a></li>
-                <li><a href="#" class="cart ">장바구니</a></li>
+                <li><a href="#" class="cart">장바구니</a></li>
             </ul>
         </nav>
     </header>
@@ -186,101 +186,43 @@
             </div>
         </div>
         <section id="healthy"><!-- carousel -->
-            <p>매일 바뀌는 메뉴로 지속가능한 관리</p>
-            <h2>케이식단 정기구독</h2>
             <div class="goodok"> <!--carousel-inner-->
-                <img src="./img/left.png" alt="prev" class="goodokprev">
-                <img src="./img/right.png" alt="next" class="goodoknext">
-                <div class="column"> <!-- ul -->
-                    <div class="inner"> <!-- li -->
-                        <a href="#"><img src="./img/healthy.jpg" alt="img01"></a>
-                        <p>당질 제한 레시피</p>
-                        <h3>저당식단</h3>
+                <p>매일 바뀌는 메뉴로 지속가능한 관리</p>
+                <h2>케이식단 정기구독</h2>
+                <div id="carousel-wrap">
+                    <p id="carousel-prev" class="prev btn"><img src="./img/left.png" alt="prev"></p>
+                    <p id="carousel-next" class="next btn"><img src="./img/right.png" alt="next"></p>
+                    <div id="carousel"><!--화면에 보여지는 영역-->
+                        <div id="carousel-inner">
+                            <ul class="column">
+                                <li><a href="#"><img src="./img/menu1.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu1.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu1.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu1.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu1.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu1.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                            </ul>
+                         </div>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="inner">
-                        <a href="#"><img src="./img/healthy2.jpg" alt="img02"></a>
-                        <p>믿고 먹을수 있는</p>
-                        <h3>당뇨식단</h3>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="inner">
-                        <a href="#"><img src="./img/healthy3.png" alt="img03"></a>
-                        <p>살빼라</p>
-                        <h3>건강식단</h3>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="inner">
-                        <a href="#"><img src="./img/healthy3.png" alt="img04"></a>
-                        <p>나만의 맞춤 건강식</p>
-                        <h3>My그리팅</h3>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="inner">
-                        <a href="#"><img src="./img/healthy3.png" alt="img04"></a>
-                        <p>나만의 맞춤 건강식</p>
-                        <h3>My그리팅</h3>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="inner">
-                        <a href="#"><img src="./img/healthy3.png" alt="img04"></a>
-                        <p>나만의 맞춤 건강식</p>
-                        <h3>My그리팅</h3>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="inner">
-                        <a href="#"><img src="./img/healthy3.png" alt="img04"></a>
-                        <p>나만의 맞춤 건강식</p>
-                        <h3>My그리팅</h3>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="inner">
-                        <a href="#"><img src="./img/healthy3.png" alt="img04"></a>
-                        <p>나만의 맞춤 건강식</p>
-                        <h3>My그리팅</h3>
-                    </div>
-                </div>
-
             </div>
             <div class="foodplan">
                 <p>빠르고 확실한 목표가 있다면</p>
                 <h2>6일 완성 챌린지 식단</h2>
-                <img src="./img/left.png" alt="prev" class="btn prev">
-                <img src="./img/right.png" alt="next" class="btn next">
-                <div class="column">
-                    <div class="inner">
-                        <a href="#"><img src="./img/healthy.jpg" alt="img01"></a>
-                        <p>당질 제한 레시피</p>
-                        <h3>저당식단</h3>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="inner">
-                        <a href="#"><img src="./img/healthy2.jpg" alt="img01"></a>
-                        <p>믿고 먹을수 있는</p>
-                        <h3>당뇨식단</h3>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="inner">
-                        <a href="#"><img src="./img/healthy3.png" alt="img01"></a>
-                        <p>살빼라</p>
-                        <h3>건강식단</h3>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="inner">
-                        <a href="#"><img src="./img/healthy3.png" alt="img01"></a>
-                        <p>나만의 맞춤 건강식</p>
-                        <h3>My그리팅</h3>
+                <div id="carousel1-wrap">
+                    <p id="carousel1-prev" class="prev btn"><img src="./img/left.png" alt="prev"></p>
+                    <p id="carousel1-next" class="next btn"><img src="./img/right.png" alt="next"></p>
+                    <div id="carousel1"><!--화면에 보여지는 영역-->
+                        <div id="carousel1-inner">
+                            <ul class="column1">
+                                <li><a href="#"><img src="./img/menu2.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu2.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu2.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu2.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu2.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                                <li><a href="#"><img src="./img/menu2.jpg" alt=""></a><p>당질 제한 레시피</p><h3>저당식단</h3></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -298,25 +240,15 @@
         <section id="myskill">
             <div class="row">
                 <div class="skill-wrap">
+                    <h2>우리집 밥상주의</h2>
                     <div class="leftimg-text">
-                        <h2>우리집 밥상주의</h2>
-                        <a href="#"><img src="./img/skill-left.jpg" alt="img01"></a>
-                        <p>무항생자 한돈으로 만든</p>
-                        <h3>매콤살콤 매실간장 돼지불고기</h2>
-                    </div>
-                    <div class="text-bot">
-                        <h1>10%</h1>
-                        <del><p>13,500원</p></del>
-                        <h2>12,150원</h2>
-                        <button type="button" class="listbutton">
-                            <span class="cart"></span>
-                        </button>
+                        <img src="./img/skill-left.jpg" alt="img01">
                     </div>
                     <div class="slide">
                         <div class="slideimg">
-                            <a href="#"><img src="./img/skill-right1.gif" alt="img01"></a>
-                            <a href="#"><img src="./img/skill-right2.jpg" alt="img01"></a>
-                            <a href="#"><img src="./img/skill-right3.jpg" alt="img01"></a>
+                            <a href="./img/skill-right1.gif"><img src="./img/skill-right1.gif" alt="img01"></a>
+                            <a href="./img/skill-right2.jpg"><img src="./img/skill-right2.jpg" alt="img02"></a>
+                            <a href="./img/skill-right3.jpg"><img src="./img/skill-right3.jpg" alt="img03"></a>
                         </div>
                         <div class="slidetext">
                             <p>부드러운 탄산과 향긋한 풍미</p>

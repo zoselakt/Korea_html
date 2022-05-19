@@ -5,6 +5,18 @@ html, body{height: 100%;}
 ul, ol{list-style: none;}
 body{background: cadetblue;}
 a{color: #666;}
+p{
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #888;
+    padding-left: 25px;
+}
+h2{
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    padding-left: 25px;
+}
 /*공통*/
 /*버튼*/
 .button{
@@ -22,6 +34,13 @@ a{color: #666;}
     transition: 0.5s;
     text-decoration: none;
 }
+.cart{
+    opacity: 0.5;
+    transition: 1s;
+}
+.cart:hover{
+    opacity: 1;
+}
 /* .button:hover{
     background: white;
     color: #18d26e;
@@ -37,8 +56,8 @@ a{color: #666;}
     background: #000;
     border-radius: 50%;
     box-shadow: 2px 2px 2px rgba(0,0,0,.2);
-    opacity: 0;
     transition: 1s;
+    opacity: 0;
     z-index: 800;
 }
 .on{
@@ -153,14 +172,6 @@ input[type=checkbox]#gnbcheck{
     width: 80%;
     overflow: hidden;
 }
-#gnb .category > a{
-    float: left;
-    padding-right: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-}
 #gnb .login{
     width: 20%;
 }
@@ -188,9 +199,6 @@ section > article{
     color: white;
     text-shadow: 0 0 10px rgba(0,0,0,.8);
 }
-section > article > h2{
-    font-size: 40px;
-}
 section > article p{
     font-size: 20px;
 }
@@ -209,18 +217,6 @@ section .row .text{
     border-radius: 5px;
     color: #000;
     width: 100%;
-}
-section .row .text p{
-    margin-bottom: 6px;
-    font-size: 13px;
-    color: #888;
-    padding-left: 25px;
-}
-section .row .text h2{
-    margin-bottom: 30px;
-    font-size: 32px;
-    font-weight: 600;
-    padding-left: 25px;
 }
 section .row .text .menu{
     text-align: center;
@@ -322,7 +318,7 @@ section .row .more{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 section .row .more >a{
     width: 250px;
@@ -342,10 +338,6 @@ section .row .more >a{
     position: relative;
     margin: 0 auto;
     overflow: hidden;
-}
-#middlebanner .mid-wrap{
-    display: block;
-    height: 490px;
 }
 #middlebanner .mid-wrap .backimg img{
     height: 500px;
@@ -373,27 +365,17 @@ section#healthy{
     width: 100%;
     height: 100%;
 }
-section#healthy > p{
-    margin-bottom: 6px;
-    font-size: 13px;
-    color: #888;
-}
-section#healthy > h2{
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
-}
 section#healthy .goodok{
     overflow: hidden;
     position: relative;
-    display: flex;
+    display: block;
     box-sizing: border-box;
     width: 1100px;
-    height: 500px;
-    padding-top: 30px;
+    padding-top: 20px;
     margin: 0 auto;
 }
-section#healthy .goodok > img{
+
+section#healthy .goodok #carousel-wrap > img{
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -403,111 +385,111 @@ section#healthy .goodok > img{
     border: 1px solid #000;
     width: 35px;
 }
-section#healthy .goodok > img.goodoknext{
-    right: 0;
-}
-section#healthy .goodok > img.goodokprev{
-    left: 0;
-}
-
-section#healthy .goodok .column{
+/*-----------------------------------------------------------*/
+#carousel-wrap {
     position: relative;
-    display: inline-block;
-    margin: 0 10px;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: 10px;
-
+    margin: 0 auto;
+    width: 900px;
+    height: 350px;
+    background: url("../images/background.gif");
 }
-section#healthy .goodok .column .inner{
-    overflow: hidden;
-    width: 250px;
-    height: 300px;
-}
-section#healthy .goodok .column .inner a{
-    overflow: hidden;
-}
-section#healthy .goodok .column .inner > p{
-    display: flex;
-    align-items: center;
-    margin: 0 10px 0 10px;
-    font-size: 14px;
-    color: #ed6251;
-}
-section#healthy .goodok .column .inner > h3{
-    display: flex;
-    align-items: center;
-    margin: 0 10px 0 10px;
-}
-section#healthy .goodok .column .inner img{
+  
+#carousel-prev, #carousel-next {
     position: absolute;
-    border-radius: 5px;
-    width: 250px;
-    height: 250px;
+    top: 115px;
+    cursor: pointer;
 }
-/**/
+
+#carousel-prev{
+    left: -58px;
+}
+  
+#carousel-next{
+    right: -35px;
+}
+  
+#carousel {
+    width: 900px;
+    height: 300px;
+    overflow: hidden;
+}
+#carousel-inner ul.column {
+    width: 620px;
+    height: 350px;
+    padding: 15px 0 15px;
+    float: left;
+}
+  
+#carousel-inner ul.column li {
+    margin-right: 10px;
+    display: inline-block;
+}
+#carousel-inner ul.column li p{
+    color: #ff8a2f;
+    padding: 0;
+}
+#carousel-inner ul.column li img{
+    width: 300px;
+    height: 230px;
+}
+
 section#healthy .foodplan{
     overflow: hidden;
     position: relative;
     display: block;
     box-sizing: border-box;
     width: 1100px;
-    height: 500px;
-    padding-top: 30px;
+    padding-top: 20px;
     margin: 0 auto;
 }
-section#healthy .foodplan > p{
-    margin-bottom: 6px;
-    font-size: 13px;
-    color: #888;
+/*-----------------------------------------------------------*/
+#carousel1-wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    height: 350px;
+    background: url("../images/background.gif");
 }
-section#healthy .foodplan > h2{
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
-}
-section#healthy .foodplan > img{
-    cursor: pointer;
+  
+#carousel1-prev, #carousel1-next {
     position: absolute;
-    top: 50%;
-    z-index: 500;
-    background: #fff;
-    border-radius: 50%;
-    border: 1px solid #000;
-    width: 35px;
-}
-section#healthy .foodplan > img.next{
-    right: 0;
-}
-section#healthy .foodplan > img.prev{
-    left: 0;
+    top: 115px;
+    cursor: pointer;
 }
 
-section#healthy .foodplan .column{
+#carousel1-prev{
+    left: -58px;
+}
+  
+#carousel1-next{
+    right: -35px;
+}
+  
+#carousel1 {
+    width: 900px;
+    height: 300px;
+    overflow: hidden;
+}
+#carousel1-inner ul.column1 {
+    width: 620px;
+    height: 350px;
+    padding: 15px 0 15px;
     float: left;
-    margin: 0 10px;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: 10px;
 }
-section#healthy .foodplan .column .inner{
-    width: 250px;
+  
+#carousel1-inner ul.column1 li {
+    margin-right: 10px;
+    display: inline-block;
 }
-section#healthy .foodplan .column .inner > p{
-    display: flex;
-    align-items: center;
-    margin: 0 10px 0 10px;
-    font-size: 14px;
-    color: #ed6251;
+#carousel1-inner ul.column1 li p{
+    color: #ff8a2f;
+    padding: 0;
 }
-section#healthy .foodplan .column .inner > h3{
-    display: flex;
-    align-items: center;
-    margin: 0 10px 0 10px;
+#carousel1-inner ul.column1 li img{
+    width: 300px;
+    height: 230px;
 }
-section#healthy .foodplan .column .inner img{
-    border-radius: 5px;
-    width: 250px;
-    height: 250px;
-}
+
 /*미드배너2*/
 #middlebanner .mid-wrap .backimg2{
     width: 100%;
@@ -539,40 +521,22 @@ section#myskill .row .skill-wrap{
     width: 1100px;
 }
 section#myskill .row .skill-wrap .leftimg-text{
-    width: 500px;
-}
-section#myskill .row .skill-wrap .leftimg-text > h2{
-    margin: 20px 0;
-    font-size: 24px;
-    font-weight: bold;
-}
-section#myskill .row .skill-wrap .leftimg-text > p{
-    margin-bottom: 6px;
-    font-size: 13px;
-    color: #888;
-    padding: 0 52px;
-}
-section#myskill .row .skill-wrap .leftimg-text > a{
     display: inline-block;
-    padding: 0 52px;
+    width: 500px;
+    height: 100%;
+    padding-left: 52px;
 }
-section#myskill .row .skill-wrap .leftimg-text > a img{
+section#myskill .row .skill-wrap .leftimg-text > img{
     width: 450px;
-}
-section#myskill .row .skill-wrap .leftimg-text > h3{
-    padding: 0 52px;
 }
 /*-------------------------------------------------------------*/
 section#myskill .row .skill-wrap .text-bot{
-    display: flex;
     float: left;
     padding: 0 52px;
 }
-section#myskill .row .skill-wrap .text-bot p{
-    padding-left: 30px;
-}
-section#myskill .row .skill-wrap .text-bot h2{
-    margin: 0;
+section#myskill .row .skill-wrap .text-bot h6{
+    display: flex;
+    color: #888;
 }
 section#myskill .row .skill-wrap .text-bot .listbutton{
     position: absolute;
@@ -587,25 +551,21 @@ section#myskill .row .skill-wrap .text-bot .listbutton{
 section#myskill .row .skill-wrap .slide{
     position: absolute;
     top: 75px;
-    right: 300px;
-    width: 260px;
+    left: 550px;
+    width: 600px;
 }
 section#myskill .row .skill-wrap .slide .slideimg{
     float: left;
     width: 150px;
+    cursor: pointer;
 }
 section#myskill .row .skill-wrap .slide .slideimg img{
     width: 145px;
     height: 147px;
 }
 section#myskill .row .skill-wrap .slide .slidetext{
-    position: relative;
-    width: 455px;
-    height: 140px;
-}
-section#myskill .row .skill-wrap .slide .slidetext p{
-    padding-top: 15px;
-    font-size: 12px;
+    width: 450px;
+    height: 150px;
 }
 section#myskill .row .skill-wrap .slide .slidetext a{
     line-height: 10px;
@@ -619,7 +579,7 @@ section#myskill .row .skill-wrap .slide .slidetext .listbutton{
     background-image: url(../img/listbutton.jpg);
     background-size: cover;
     width: 30px;
-    height: 30px;    
+    height: 30px;
     right: 75px;
     top: 100px;
     cursor: pointer;
@@ -627,9 +587,6 @@ section#myskill .row .skill-wrap .slide .slidetext .listbutton{
 /*------------------------------------*/
 section#myskill .row .skill-wrap .skillimg{
     display: inline-block;
-}
-section#myskill .row .skill-wrap .skillimg h2{
-    padding: 20px 0;
 }
 section#myskill .row .skill-wrap .skillimg .img-wrap{
     display: flex;
@@ -708,11 +665,6 @@ section#mybrand{
     width: 1652px;
     margin: 0 auto;
 }
-section#mybrand h2{
-    margin: 20px 0;
-    font-size: 24px;
-    font-weight: bold;
-}
 section#mybrand .goodok{
     overflow: hidden;
     position: relative;
@@ -725,13 +677,6 @@ section#mybrand .goodok .column{
     float: left;
     margin: 0 10px;
     width: calc(25% -8px);
-}
-section#mybrand .goodok .column .inner > p{
-    display: flex;
-    align-items: center;
-    margin: 0 10px 0 10px;
-    font-size: 14px;
-    color: #333;
 }
 section#mybrand .goodok .column .inner > h3{
     display: flex;
@@ -773,11 +718,6 @@ section#magazine{
 section#magazine .row{
     width: 1100px;
     min-width: 1000px;
-}
-section#magazine .row > h2{
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
 }
 section#magazine .row > img{
     cursor: pointer;
@@ -919,7 +859,7 @@ section#magazine .row .bottom .img-right img{
     content: '';
     position: absolute;
     height: 2px;
-    width: 100%; 
+    width: 100%;
     top: 30px;
     background: #555;
 }
@@ -934,13 +874,10 @@ section#magazine .row .bottom .img-right img{
 }
 #footer .container .row .column ul li{
     border-bottom: 1px solid #333;
-    padding: 10px 0; 
+    padding: 10px 0;
 }
 #footer .container .row .column ul li:nth-child(1){
     padding-top: 0;
-}
-#footer .container .row .column p{
-    line-height: 26px;
 }
 #footer .container .row .column.news input[type=text]{
     border: 0;
@@ -958,11 +895,35 @@ section#magazine .row .bottom .img-right img{
 
 /*media쿼리*/
 @media screen and (max-width: 1200px ){
+    main{
+        width: 1100px;
+    }
+    #header #top-logo{
+        padding-top: 11px;
+    }
+    #header #gnb{
+        width: 100%;
+        opacity: 0.7;
+    }
+    #header #gnb:hover{
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #header .login{
+        width: 15%;
+        float: left;
+    }
     section .row .column{ /*이미지 2개씩 보이게끔*/
         flex: 50%;
     }
     section#myprofile .row .column .inner img{
         width: 40%;
+    }
+    section#mybrand{
+        width: 1100px;
+    }
+    #footer{
+        width: 1100px;
     }
     #footer .container{
         width: 100%;
