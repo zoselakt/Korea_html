@@ -87,6 +87,4 @@ $(function() {
      });
      $("+a", thisElem).css("display", "block").animate({height : 200}, 400);
  });
-
-
 }); 

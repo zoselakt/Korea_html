@@ -50,7 +50,7 @@ $(function() {
           $("#carousel-next").trigger("click");
         },3000);
       }
-    });
+    });0
   
   }); // end
 
@@ -102,21 +102,24 @@ $(function() {
     return false;
   });
 
-  $("#navi a").click(function(){
+  // 최근본상품
+  $("#section a").click(function () {
     let imgSrc = $(this).attr("href");
-    let checkAni = $("#main img:last").is(":animated");
-    if(checkAni == true){
-        $("#main img").before(`<img src="${imgSrc}">`)
-        $("#main img:last").stop().css("opacity", 0);
-        $("#main img:last").remove();
-        $("#main img").attr("src", imgSrc);  
-    }else{
-        $("#main img").before(`<img src="${imgSrc}">`)
-        $("#main img:last").stop().css("opacity", 1);
-        $("#main img:last").remove();
-        $("#main img").attr("src", imgSrc);
+    let checkAni = $(".chatting img:last").is(":animated");
+    let lastimg = $(".chatting img:last");
+    let mainimg = $(".chatting img");
+    if (checkAni == true) {
+      $(mainimg).before(`<img src="${imgSrc}">`)
+      $(lastimg).stop().css("opacity", 0);
+      $(lastimg).remove();
+      $(mainimg).attr("src", imgSrc);
+    } else {
+      $(mainimg).before(`<img src="${imgSrc}">`)
+      $(lastimg).stop().css("opacity", 1);
+      $(lastimg).remove();
+      $(mainimg).attr("src", imgSrc);
     }
     return false;
-});
+  });
 // end
 }); 

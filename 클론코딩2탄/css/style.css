@@ -159,6 +159,12 @@ input[type=checkbox]#gnbcheck{
     background-repeat: no-repeat;
     background-image: url(../img/bottom.png);
 }
+
+.right_fixbox .chatting .hobby img{
+    width: 120px;
+    height: 150px;
+}
+
 /*right_fix*/
 .on{
     opacity: 1;
