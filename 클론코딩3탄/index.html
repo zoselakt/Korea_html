@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 클론3탄 </title>
+    <link rel="stylesheet" href="./css/initial.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</head>
+<body>
+    <!--탑버튼-->
+    <div class="back-to-top">
+        <a href="#intro">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+        </a>
+    </div>
+    <!--탑버튼-->
+    <!--탑 메뉴-->
+    <input type="checkbox" id="gnbcheck" name="gnbcheck">
+    <header id="header">
+        <label for="gnbcheck" id="gnbbtn"><span></span><span></span><span></span></label>
+        <h1 id="top-logo">
+            <img src="./img/logo_img.png" alt="">
+        </h1>
+        <nav id="gnb">
+            <label for="gnbcheck" id="mobile-close-btn"></label>
+            <ul class="category">
+                <li><a href="#intro">카테고리</a></li>
+                <li><a href="#menu-section">지점안내</a></li>
+                <li><a href="#healthy">수강신청</a></li>
+                <li><a href="#myskill">공지사항/이벤트</a></li>
+            </ul>
+            <ul class="login">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#" class="cart">장바구니</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--탑 메뉴-->
+    <main>
+        <!--메인배너-->
+        <section id="intro">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="./img/메인배너1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./img/메인배너2.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./img/메인배너3.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./img/메인배너4.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./img/메인배너5.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./img/메인배너6.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./img/메인배너7.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./img/메인배너8.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./img/메인배너9.jpg" alt=""></a></div>
+                </div>
+                <!-- ADD PAGINATION -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script type="text/javascript">
+                var swiper = new Swiper(".mySwiper", {
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                });
+            </script>
+        </section>
+        <!--메인배너-->
+        <div class="category">
+            <h2 class="mainh2">CATEGORY LIST</h2>
+            <ul>
+                <li><a href="#">Category1<img src="./img/main-cate.jpg"></a></li>
+                <li><a href="#">Category2<img src="./img/main-cate-2.jpg"></a></li>
+                <li><a href="#">Category3<img src="./img/main-cate-3.jpg"></a></li>
+                <li><a href="#">Category4<img src="./img/main-cate-4.jpg"></a></li>
+                <li><a href="#">Category5<img src="./img/main-cate-5.jpg"></a></li>
+                <li><a href="#">Category6<img src="./img/main-cate-6.jpg"></a></li>
+                <li><a href="#">Category7<img src="./img/main-cate-7.jpg"></a></li>
+                <li><a href="#">Category8<img src="./img/main-cate-8.jpg"></a></li>
+                <li><a href="#">Category9<img src="./img/main-cate-9.jpg"></a></li>
+                <li><a href="#">Category10<img src="./img/main-cate-10.jpg"></a></li>
+            </ul>
+        </div>
+        <div class="section_div">
+            <a href="#"><img src="./img/main-originals.png" alt=""></a>
+            <span class="txt">컬처클럽이 제공하는 퀄리티 클래스</span>
+        </div>
+        <div class="culture">
+            <h2 class="cultureclub">cultureclub <span>추천 컬처클럽클래스</span></h2>
+            <div class="tab-title">
+                <ul>
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">tab1</a></li>
+                    <li><a href="#">tab2</a></li>
+                    <li><a href="#">tab3</a></li>
+                </ul>
+            </div>
+            <div class="tab-wrap">
+                <ul>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="oneday">
+            <h2 class="onedayh2">ONEDAY SPECIAL<span>인기 원데이 클래스</span></h2>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너2.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너3.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너4.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너5.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너6.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너7.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너8.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/메인배너9.jpg" alt=""></a></div>
+            </div>
+            <!-- ADD PAGINATION -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript">
+            var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
+        <div class="little">
+            <h2 class="littleclub">LITTLE CLUB <span>추천 리틀클럽클래스</span></h2>
+            <div class="tab-title">
+                <ul>
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">tab1</a></li>
+                    <li><a href="#">tab2</a></li>
+                    <li><a href="#">tab3</a></li>
+                </ul>
+            </div>
+            <div class="tab-wrap">
+                <ul>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="event">
+            <h2 class="eventh2">EVENT</h2>
+            <ul>
+                <li class="event_item"><a href="#">메인글씨와 호버하면 세부글씨</a></li>
+                <li class="event_item"><a href="#">메인글씨와 호버하면 세부글씨</a></li>
+                <li class="event_item"><a href="#">메인글씨와 호버하면 세부글씨</a></li>
+                <li class="event_item"><a href="#">메인글씨와 호버하면 세부글씨</a></li>
+                <li class="event_item"><a href="#">메인글씨와 호버하면 세부글씨</a></li>
+                <li class="event_item"><a href="#">메인글씨와 호버하면 세부글씨</a></li>
+            </ul>
+        </div>
+        <div class="catalog">
+            <h2 class="catalogh2"></h2>
+        </div>
+
+    </main>
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="column footer-logo">
+                        <img src="./img/img_header_logo.png">
+                    </div>
+                    <div class="column">
+                        <h4>siteMap</h4>
+                        <ul>
+                            <li><a href="#intro">Home</a></li>
+                            <li><a href="#menu-section">menu</a></li>
+                            <li><a href="#healthy">healthy</a></li>
+                            <li><a href="#myskill">menu2</a></li>
+                            <li><a href="#mybrand">mybrand</a></li>
+                            <li><a href="#magazine">magazine</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Contact Us</h4>
+                        <p>
+                            A108 Adam street <br>
+                            New York, NY 535022 <br>
+                            United states <br>
+                            <strong>Phone : </strong> <a href="tel:+82-10-1111-2222">+82-010-1234-5678</a>
+                            <strong>Email : </strong><a href="mailto:kd66@naver.com">MyMail</a>
+                        </p>
+                    </div>
+                    <div class="column news">
+                        <h4>News</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consectetur expedita, dolorum laudantium aspernatur atque incidunt nobis porro, omnis nam totam rem, excepturi modi quidem sint commodi perspiciatis sapiente. Laborum.</p>
+                        <form><input type="text" name="search"><input type="submit" value="search"></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                &copy;copyright<strong>MyPage</strong> .All Right Reserved
+            </div>
+            <div class="credits">
+                Disign By <a href="mailto:kd66@naver.com">MySelf</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
