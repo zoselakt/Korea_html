@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Album example · Bootstrap v4.6</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/album/">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./initial.min.css"/>
+    <link rel="stylesheet" href="./customize.css"/>
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 offset-md-1 py-4">
+          <form class=".form-control" role="search">
+            <input type="search" class="search" placeholder="검색">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>ddazua</strong>
+      </a>
+      <ul class="ddazua_top">
+        <li class="ddazua_menu"><a href="#">패키지과정</a></li>
+        <li class="ddazua_menu"><a href="#">개별강좌</a></li>
+        <li class="ddazua_menu"><a href="#">수강후기</a></li>
+        <li class="ddazua_menu"><a href="#">고객센터</a></li>
+        <li class="ddazua_menu"><a href="#">에디터추천</a></li>
+      </ul>
+      <ul class="ddazua_login">
+        <li class="ddazua_menu"><a href="#">로그인</a></li>
+        <li class="ddazua_menu"><a href="#">회원가입</a></li>
+      </ul>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="./img/icon_search.png" alt="">
+      </button>
+      <label for="gnbcheck" id="gnbbtn"><span></span><span></span><span></span></label>
+    </div>
+  </div>
+</header>
+<div class="back-to-top">
+  <a href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </a>
+</div>
+<main role="main">
+   <!-- Swiper -->
+   <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./img/메인배너_PC_GIF.gif" alt=""></div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <!-- ADD PAGINATION -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript">
+      var swiper = new Swiper(".mySwiper", {
+          pagination:{
+              el: '.swiper-pagination',
+              clickable: true,
+          },
+      });
+  </script>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./img/썸네일 (1).png">
+            <div class="card-body">
+              <p class="card-text">게임 개발자가 꼭 배워야하는 게임 수학 & 물리</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">더보기</button>
+                </div>
+                <small class="text-muted">120,000 원</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./img/썸네일 (1).png">
+            <div class="card-body">
+              <p class="card-text">게임 개발자가 꼭 배워야하는 게임 수학 & 물리</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">더보기</button>
+                </div>
+                <small class="text-muted">120,000 원</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./img/썸네일 (1).png">
+            <div class="card-body">
+              <p class="card-text">게임 개발자가 꼭 배워야하는 게임 수학 & 물리</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">더보기</button>
+                </div>
+                <small class="text-muted">120,000 원</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./img/썸네일 (1).png">
+            <div class="card-body">
+              <p class="card-text">게임 개발자가 꼭 배워야하는 게임 수학 & 물리</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">더보기</button>
+                </div>
+                <small class="text-muted">120,000 원</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./img/썸네일 (1).png">
+            <div class="card-body">
+              <p class="card-text">게임 개발자가 꼭 배워야하는 게임 수학 & 물리</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">더보기</button>
+                </div>
+                <small class="text-muted">120,000 원</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./img/썸네일 (1).png">
+            <div class="card-body">
+              <p class="card-text">게임 개발자가 꼭 배워야하는 게임 수학 & 물리</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">더보기</button>
+                </div>
+                <small class="text-muted">120,000 원</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./img/썸네일 (1).png">
+            <div class="card-body">
+              <p class="card-text">게임 개발자가 꼭 배워야하는 게임 수학 & 물리</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">더보기</button>
+                </div>
+                <small class="text-muted">120,000 원</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./img/썸네일 (1).png">
+            <div class="card-body">
+              <p class="card-text">게임 개발자가 꼭 배워야하는 게임 수학 & 물리</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">더보기</button>
+                </div>
+                <small class="text-muted">120,000 원</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="./img/썸네일 (1).png">
+            <div class="card-body">
+              <p class="card-text">게임 개발자가 꼭 배워야하는 게임 수학 & 물리</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">더보기</button>
+                </div>
+                <small class="text-muted">120,000 원</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer id="footer">
+  <div class="footer-top">
+      <div class="container">
+          <div class="row">
+              <div class="column footer-logo">
+                  <img src="./img/img_header_logo.png">
+              </div>
+              <div class="column">
+                  <h4>siteMap</h4>
+                  <ul>
+                      <li><a href="#intro">Home</a></li>
+                      <li><a href="#menu-section">menu</a></li>
+                      <li><a href="#healthy">healthy</a></li>
+                      <li><a href="#myskill">menu2</a></li>
+                      <li><a href="#mybrand">mybrand</a></li>
+                      <li><a href="#magazine">magazine</a></li>
+                  </ul>
+              </div>
+              <div class="column">
+                  <h4>Contact Us</h4>
+                  <p>
+                      A108 Adam street <br>
+                      New York, NY 535022 <br>
+                      United states <br>
+                      <strong>Phone : </strong> <a href="tel:+82-10-1111-2222">+82-010-1234-5678</a>
+                      <strong>Email : </strong><a href="mailto:kd66@naver.com">MyMail</a>
+                  </p>
+              </div>
+              <div class="column news">
+                  <h4>News</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consectetur expedita, dolorum laudantium aspernatur atque incidunt nobis porro, omnis nam totam rem, excepturi modi quidem sint commodi perspiciatis sapiente. Laborum.</p>
+                  <form><input type="text" name="search"><input type="submit" value="search"></form>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="copyright">
+          &copy;copyright<strong>MyPage</strong> .All Right Reserved
+      </div>
+      <div class="credits">
+          Disign By <a href="mailto:kd66@naver.com">MySelf</a>
+      </div>
+  </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
