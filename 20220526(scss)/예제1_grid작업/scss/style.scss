@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+$columnWidth: 6.5%;
+$gutterWidth: 2%;
+
+
+@mixin col($count) {
+    width: ($columnWidth * $count) + ($gutterWidth * ($count - 1));
+}
+
+/**/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.container-fluid{
+    background-color: green;
+}
+.row{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    &.justify-content-start{
+        justify-content: flex-start;
+    }
+    &.justify-content-center{
+        justify-content: center;
+    }
+    &.justify-content-end{
+        justify-content: flex-end;
+    }
+    [class *= col] {/*col이 들어간 모든 속성*/
+    box-sizing: border-box;
+    border: 1px solid red;
+        &:first-child{
+        margin-left: 0;
+        }
+    }
+    /*mixin 적용*/
+    @for $i from  1 through 12{
+        .col-#{$i} { @include col($i);  }
+    }
+}
