@@ -6,7 +6,9 @@ ul, ol{list-style: none;}
 a{color: #666;}
 /*공통*/
 main{
-    min-width: 1620px;
+    min-width: 1180px;
+    margin: 0 auto;
+    width: 900px;
 }
 /*버튼*/
 .button{
@@ -113,8 +115,8 @@ input[type=checkbox]#gnbcheck{
     width: 100%;
     top: 0;
     z-index: 800;
-    background: rgba(0,0,0,.3);
     display: flex;
+    background: #fff;
 }
 #header #top-logo{
     float: left;
@@ -122,11 +124,12 @@ input[type=checkbox]#gnbcheck{
     justify-content: center;
     align-items: center;
     height: 100px;
-    width: 20%;
+    width: 15%;
+    padding-right: 200px;
 }
 
 #header #top-logo a{
-    color: white;
+    color: black;
     height: 60px;
     line-height: 60px;
     padding: 0 20px;
@@ -134,75 +137,83 @@ input[type=checkbox]#gnbcheck{
 }
 #gnb{
     float: right;
+    width: 1100px;
+    display: flex;
+}
+#gnb ul{
+    display: flex;
+}
+#gnb .topgnb li{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 160px;
 }
-#gnb ul{
-    overflow: hidden; /* li정렬*/
-}
-#gnb ul li{
-    float: left;
+#gnb .topgnb li:last-child{
+    padding-right: 100px;
 }
 #gnb ul li a{
-    display: block;
+    display: flex;
     line-height: 60px;
-    padding: 0 15px;
+    padding: 0 20px;
+    color: #000;
+    transition: .5s;
+    text-decoration: none;
 }
-#gnb .category{
-    width: 80%;
-    overflow: hidden;
-}
+#gnb ul li a:hover{color: #18d26e;}
 #gnb .login{
-    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+#gnb .login li{
+    width: 110px;
+}
+
 /*해더 끝*/
-/*상위 레이아웃*/
-section{
-
-}
-/*인트로*/
-section#intro{
-
-}
-
-/*인트로*/
 /*category*/
-.category li{
+.category ul{
+    display: flex;
+    justify-content: space-around;
+}
+.category ul li{
     overflow: hidden;
     display: inline-block;
 }
 .category li a{
-    float: left;
-    position: relative;
-    text-decoration: none;
-    font-size: 14px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .category li a img{
-    display: flex;
     width: 100px;
     height: 100px;
 }
+.category li a .inner-text{
+    position: absolute;
+    top: 530px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
 /*category*/
-
 .section_div{
     position: relative;
+    padding-top: 20px;
 }
 .section_div img{
-    width: 1620px;
+    width: 1200px;
     height: 200px;
 }
 .section_div .txt{
     position: absolute;
     top: 45%;
-    left: 50%;
+    left: 40%;
     font-weight: bold;
     font-size: 20px;
 }
 /*culture little start*/
-.culture , .little .littleclub{
+.culture , .little{
     overflow: hidden;
 }
 .culture .cultureclub > span, .little .littleclub > span{
@@ -212,36 +223,45 @@ section#intro{
 .tab-wrap{
     padding-top: 10px;
     width: 1200px;
-    height: 800px;
+    height: 900px;
 }
 .tab-wrap ul{
-
+    display: flex;
+    justify-content: space-around;
 }
 .tab-wrap ul li{
     display: inline-block;
-    width: 200px;
+    width: 250px;
+    line-height: 20px;
+}
+.tab-wrap ul li a{
+    text-decoration: none;
+}
+.tab-wrap ul li .text{
+    font-size: 10px;
+    color: #666;
+}
+.tab-wrap ul li h3{
+    font-size: 12px;
+    color: #333;
+    padding-bottom: 30px;
 }
 .tab-wrap ul li a img{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 180px;
 }
 /*culture, little end*/
 /*중간섹션 시작*/
 .tab-title{
     border: 1px solid #000;
-    width: 1320px;
+    width: 1120px;
     height: 101px;
+    margin: 10px 40px;
 }
 .tab-title ul{
     display: inline-block;
 }
-.tab-title ul li{
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.tab-title ul li:first-child{
+.tab-title ul:first-child li{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,33 +270,46 @@ section#intro{
     height: 100px;
     background-color: beige;
 }
+.tab-title ul li{
+    display: inline-block;
+}
 .tab-title ul li a{
     text-decoration: none;
+    tab-size: 25px;
+    font-weight: bold;
 }
 /*중간 섹션 끝*/
 /*event start*/
 .event{
-    width: 1620px;
+    width: 1160px;
     overflow: hidden;
 }
-.event .eventul .event_item{
-    float: left;
+.event .eventul{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
 }
 .event .eventul .event_item{
     position: relative;
     width: 250px;
     height: 300px;
     display: inline-block;
-    border: 1px solid #333;
+    border: 1px solid #666;
+}
+.event .eventul .event_item:hover{
+    color: #000;
+    font-weight: bold;
 }
 .event .eventul .event_item a{
     position: absolute;
-    border: 1px solid #333;
+    border: 1px solid #666;
     text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
     top: 10px;
     left: 10px;
-    width: 50px;
-    height: 30px;
+    width: 40px;
+    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center
@@ -291,13 +324,74 @@ section#intro{
 .event .eventul .event_item p{
     position: absolute;
     bottom: 30px;
-    color: #333;
+    color: #666;
     padding: 30px;
 }
-
-
-
 /*event end*/
+/*lastitem*/
+.lastitem{
+    width: 1140px;
+    height: 200px;
+    display: flex;
+}
+.catalog{
+    width: 51%;
+    overflow: hidden;
+    display: inline-block;
+    border-right: 1px solid rgba(0,0,0,.2);
+}
+.catalog img{
+    width: 450px;
+    height: 150px;
+    padding-left: 20px;
+}
+.notice{
+    width: 45%;
+    overflow: hidden;
+    padding-left: 20px;
+    line-height: 28px;
+    position: relative;
+}
+.notice a img{
+    float: right;    
+}
+.notice .noticeh2{
+    padding-bottom: 5px;
+}
+.notice .noticeh3 a{
+    text-decoration: none;
+}
+.notice .noticep{
+    color: #333;
+    font-size: 12px;
+}
+
+/*lastitem end*/
+/*swiper*/
+.swiper .swiper-wrapper .swiper-slide{
+    display: inline-block;
+    padding-top: 100px;
+    text-align: center;
+}
+.swiper.botSwiper .swiper-wrapper .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    background: #fdfdf6;
+    height: 600px;
+}
+.swiper.botSwiper .swiper-wrapper .swiper-slide img{
+    border-radius: 100%;
+    padding-top: 80px;
+    width: 300px;
+    height: 300px;
+}
+.swiper.botSwiper .swiper-wrapper .swiper-slide a{
+    display: inline-block;
+    text-decoration: none;
+}
+/*swiper*/
 /*footer*/
 #footer{
     background: #000;
@@ -378,36 +472,43 @@ section#intro{
 }
 
 /*media쿼리*/
-@media screen and (max-width: 1200px ){
+@media screen and (max-width: 1240px ){
     main{
-        width: 1100px;
+        min-width: 1200px;
+        width: 700px;
     }
     #header #top-logo{
-        padding-top: 11px;
+        padding: 10px;
     }
     #header #gnb{
-        width: 100%;
-        opacity: 0.7;
+        width: 1200px;
     }
     #header #gnb:hover{
-        opacity: 1;
         transition: 0.5s;
     }
+    #header #gnb ul{
+        overflow: hidden;
+        width: 800px;
+    }
+    #header #gnb ul li{
+        font-size: 12px;
+        font-weight: bold;
+
+    }
+    #header #gnb ul li a{
+        width: 180px;
+    }
     #header .login{
-        width: 15%;
-        float: left;
+        width: 100px;
     }
-    section .row .column{ /*이미지 2개씩 보이게끔*/
-        flex: 50%;
+    .category{
+        flex: 100%;
+        flex-basis: auto;
+        flex-wrap: wrap;
     }
-    section#myprofile .row .column .inner img{
-        width: 40%;
-    }
-    section#mybrand{
-        width: 1100px;
-    }
+
     #footer{
-        width: 1100px;
+        width: 1240px;
     }
     #footer .container{
         width: 100%;
@@ -417,12 +518,6 @@ section#intro{
     }
 }
 @media screen and (max-width:767px) {
-    section .row .column{
-        flex: 100%;
-    }
-    section#ourclients .row .column, section#mytool .row .column{
-        flex: 50%;
-    }
     #footer .container .row .column{
         flex: 100%;
     }
@@ -440,7 +535,7 @@ section#intro{
         top: 0;
         bottom: 0;
         left: -100%;
-        width: 100%;
+        width: 500px;
         background: rgba(0,0,0,.8);
         transition: .5s ease-in-out;
         z-index: 600;
