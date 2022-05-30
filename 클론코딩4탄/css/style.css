@@ -369,33 +369,45 @@ input[type=checkbox]#gnbcheck{
 /*info end*/
 /*notice*/
 .notice{
-
+    padding: 30px;
 }
 .notice .notice-head{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    width: 100%;
 }
-.notice .notice-head:hover a{
-    color: #000;
-    text-decoration: underline;
-}
+
 .notice .notice-head h2{
     text-align: center;
+    font-size: 32px;
 }
 .notice .notice-head ul{
-    display: inline-block;
-}
-.notice .notice-head ul > a{ 
-    font-size: 25px;
-    color: #363636;
-    text-decoration: none;
+    padding: 10px 0;
 }
 .notice .notice-head ul li{
     display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-left: 30px;
+}
+.notice .notice-head ul li::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #898989;
+    border-radius: 100%;
+    left: 0;
+    top: 50%;
+}
+.notice .notice-head li:hover a{
+    color: #000;
+    text-decoration: underline;
+}
+.notice .notice-head ul li:first-child::after{
+    display: none;
 }
 .notice .notice-head ul li a{
-    font-size: 25px;
+    font-size: 18px;
     color: #363636;
     text-decoration: none;
 }
@@ -406,6 +418,7 @@ input[type=checkbox]#gnbcheck{
 .notice .items-box ul{
     display: flex;
     justify-content: space-around;
+    padding-bottom: 40px;
 }
 .notice .items-box li{
     overflow: hidden;
@@ -416,94 +429,203 @@ input[type=checkbox]#gnbcheck{
     padding: 30px;
 }
 /*notice end*/
+/*service*/
+.service{
+    overflow: hidden;
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    background: #eff5ff;
+    padding: 35px 0;
+}
+.service .serviceh2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+.service .service-inner ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+}
+.service .service-inner li{
+    display: inline-block;
+    text-align: center;
+    height: 150px;
+}
+.service .service-inner li a{
+    text-decoration: none;
+}
+.service .service-inner li a:hover{
+    color: #4b63c3;
+}
+.service .service-inner li a img{
+    width: 65px;
+    height: 62px;
+    padding-bottom: 20px;
+}
+.service .service-inner li a span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+/*service end*/
+/*last-item*/
+.last-items{
+    height: 400px;
+    overflow: hidden;
+    padding-top: 30px;
+}
+.last-items .story{
+    width: 45%;
+    float: left;
+}
+.last-items .story > h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+.last-items .story ul{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+.last-items .story ul li{
+    display: inline-block;
+}
+.last-items .story ul li a{
+    
+}
+.last-items .story ul li a img{
+    width: 160px;
+    height: 160px;
+    border-radius: 30px;
+}
+.last-items .story ul li a span{
+    display: flex;
+    width: 140px;
+    padding-top: 20px;
+}
 
-
-
-
-
-
-
-
-
+.last-items .faq{
+    width: calc(55% - 30px);
+    float: right;
+    padding-left: 30px;
+}
+.last-items .faq h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+.last-items .faq .faqul{
+    padding-top: 30px;
+}
+.last-items .faq .faqul li{
+    position: relative;
+    padding-bottom: 10px;
+}
+.last-items .faq .faqul li a{
+    text-decoration: none;
+    display: flex;
+}
+.last-items .faq .faqul li > a:hover{
+    text-decoration: underline;
+    color: #4b63c3;
+}
+.last-items .faq .faqul li a::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #333;
+    border-radius: 100%;
+    left: 0;
+    top: 50%;
+}
+.last-items .faq .faqul li a h3{
+    color: #000;
+    font-weight: bold;
+    padding-left: 30px;
+}
+.last-items .faq .bottom{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.last-items .faq .bottomli{
+    background: #f3f3f3;
+    width: 130px;
+    height: 50px;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+}
+.last-items .faq .bottomli a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+/*last-item*/
 
 /*footer*/
 #footer{
-    background: #000;
-    color: #fff;
-    font-size: 14px;
+    overflow: hidden;
 }
-#footer .footer-top{
-    background: #111;
-    padding: 60px 0 30px;
-}
-#footer .container{
-    width: 1140px;
-    margin: 0 auto;
-}
-#footer > .container{
-    padding: 30px 0;
-    text-align: center;
-}
-#footer .container .row{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-#footer .container .row .column{
-    flex: 25%;
-    padding: 0 10px;
-    margin-bottom: 30px;
-    box-sizing: border-box;
-}
-#footer .container .row .column.footer-logo img{
-    width: 200px;
-    height: 200px;
-}
-#footer .container .row .column h4{
-    position: relative;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-bottom: 12px;
-    margin-bottom: 20px;
-}
-#footer .container .row .column h4::before{
-    content: '';
-    position: absolute;
-    height: 2px;
+#footer .footertop{
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    float: left;
     width: 100%;
-    top: 30px;
-    background: #555;
+    display: flex;
+    align-items: center;
 }
-#footer .container .row .column h4::after{
+#footer .footertop .left-footer{
+    display: flex;
+    align-items: center;
+    width: 75%;
+    height: 60px;
+}
+#footer .footertop .left-footer li{
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+}
+#footer .footertop .left-footer li::after{
     content: '';
     position: absolute;
-    height: 3px;
-    width: 60px;
-    top: 30px;
-    left: 0;
-    background: #18d26e;
+    width: 1px;
+    height: 10px;
+    left: 15px;
+    top: 50%;
+    background: #333;
 }
-#footer .container .row .column ul li{
-    border-bottom: 1px solid #333;
-    padding: 10px 0;
+#footer .footertop .left-footer li:first-child::after{
+    display: none;
 }
-#footer .container .row .column ul li:nth-child(1){
-    padding-top: 0;
+#footer .footertop li a{
+    text-decoration: none;
 }
-#footer .container .row .column.news input[type=text]{
-    border: 0;
-    padding: 6px 8px;
-    width: 65%;
+#footer .footertop .right-footer{
+    float: right;
+    width: 23%;
 }
-#footer .container .row .column.news input[type=submit]{
-    border: 0;
-    padding: 6px 0;
-    width: 35%;
-    background: #18d26e;
-    color: white;
-    cursor: pointer;
+#footer .footertop .right-footer .familysite{
+    width: 180px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #dfdfdf;
 }
-
+#footer .footertop .right-footer a{
+    display: inline-block;
+    border: 1px solid #d4d4d4;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+#footer .footer-inner{
+    
+}
 /*media쿼리*/
 
