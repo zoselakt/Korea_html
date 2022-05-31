@@ -125,7 +125,7 @@ input[type=checkbox]#gnbcheck{
     justify-content: center;
     align-items: center;
     height: 100px;
-    width: 15%;
+    width: 300px;
 }
 #header #top-logo a{
     height: 130px;
@@ -135,12 +135,10 @@ input[type=checkbox]#gnbcheck{
 #gnb{
     overflow: hidden;
 }
-#gnb ul{
-    display: flex;
-}
 #gnb .login{
     float: right;
     height: 20px;
+    display: flex;
 }
 #gnb .login li{
     position: relative;
@@ -166,43 +164,49 @@ input[type=checkbox]#gnbcheck{
 }
 
 #gnb .topgnb{
-    width: 1100px;
-    float: left;
-    justify-content: center;
-    align-items: center;
+    width: 900px;
     height: 120px;
-}
-#gnb .topgnb li{
-    width: 160px;
-}
-#gnb .topgnb li a{
     display: flex;
-    color: #000;
+}
+#gnb .topgnb .topgnbli{
+    width: 100%;
+    z-index: 100;
+    padding-top: 40px;
+}
+#gnb .topgnb .topgnbli:hover .submenu{
+    display: block;
     transition: .5s;
+}
+#gnb .topgnb .topgnbli > a{
+    color: #000;
     text-decoration: none;
     font-weight: bold;
     font-size: 23px;
 }
 #gnb ul li a:hover{color: #18d26e;}
+#gnb .topgnb .topgnbli .submenu{
+    width: 180px;
+    height: 400px;
+    display: none;
+    position: absolute;
+    padding-top: 30px;
+    border-top: 1px solid #666;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+}
+#gnb .topgnb .topgnbli .submenu li{
+    float: left;
+    display: block;
+    margin-top: 5px;
+}
+#gnb .topgnb .topgnbli .submenu li a{
+    width: 300px;
+    text-decoration: none;
+    color: #000;
+}
+
 /* 하단메뉴*/
-#header #gnb .topgnb > li{
 
-}
-#header #gnb .topgnb > li:nth-child(1){  }
-#header #gnb .topgnb > li:hover{
-    transition-duration: 0.5s;
-    background: white;
-}
-#header #gnb .topgnb > li:hover .submenu{
-    transition-duration: 1s;
-    text-align: center;
-    margin: 0;
-    background: white;
-}
-.submenu>li{
-
- }
-.submenu{ height: 0; overflow: hidden; }
 /*하위메뉴 끝*/
 
 /*해더 끝*/
@@ -210,6 +214,7 @@ input[type=checkbox]#gnbcheck{
 .swiper .swiper-wrapper .swiper-slide{
     display: inline-block;
     text-align: center;
+    z-index: 0;
 }
 /*swiper*/
 /*category*/
