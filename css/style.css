@@ -219,49 +219,56 @@ input[type=checkbox]#gnbcheck{
 /*swiper*/
 /*category*/
 .category{
-    text-align: center;
-    padding-top: 30px;
-}
-.category .mainh2{
-    font-size: 32px;
-    font-weight: bold;
-}
-.category .mainh3{
-    color: #999;
-    padding-bottom: 30px;
-}
-.section{
     overflow: hidden;
-    position: relative;
-    width: 100%;
+    height: 400px;
 }
-.section .sectionul{
+.category .category-left{
+    float: left;
+    width: 300px;
+}
+.category .category-left li{
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border-top: 3px solid #dfdfdf;
+    border-bottom: 3px solid #dfdfdf;
+    margin-top: 5px;
+}
+.category .category-left li:hover{
+    border-radius: 15px;
+    transition: .5s;
+    background: #007ea0;
+    border-top: none;
+    border-bottom: none;
+    height: 50px;
+}
+.category .category-left li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #000;
+}
+.category .category-right{
+    width: calc(100%-310px);
+    height: 300px;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 40px;
-}
-.section .sectionul li{
-    text-align: center;
-    width: 11.1%;
-}
-.section .sectionul li a{
-    text-decoration: none;
-    display: inline-block;
-}
-.section .sectionul li a:hover{
-    text-decoration: underline;
-}
-.section .sectionul li a:hover img{
-    background: rgba(75, 99, 195, 0.2);
-}
-.section .sectionul li a span{
-    display: flex;
-    height: 40px;
-    color: #363636;
-    line-height: 1.125rem;
-    justify-content: center;
     align-items: center;
+    float: right;
+    overflow: hidden;
 }
+.category .category-right li{
+    display: inline-block;
+    border: 1px solid #000;
+    height: 300px;
+}
+.category .category-right li a{
+    text-decoration: none;
+    width: 200px;
+}
+
 /*category end*/
 /*info*/
 .info{
