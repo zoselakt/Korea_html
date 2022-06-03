@@ -15,32 +15,28 @@
 <body>
     <!--탑버튼-->
     <div class="back-to-top">
-        <a href="#intro">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
-        </a>
+        <a href="#intro"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg></a>
     </div>
     <!--탑버튼-->
     <!--탑 메뉴-->
-    <input type="checkbox" id="gnbcheck" name="gnbcheck">
     <header id="header">
-        <label for="gnbcheck" id="gnbbtn"><span></span><span></span><span></span></label>
-        <h1 id="top-logo">
-            <a href="#"><img src="./img/h-logo.svg" alt=""></a>
-        </h1>
-        <nav id="gnb">
-            <label for="gnbcheck" id="mobile-close-btn"></label>
-            <div class="gnbhomepage">
-                <ul class="homepage">
-                    <li><a href="#">영진전문대학교</a></li>
-                    <li><a href="#">입학홈페이지</a></li>
-                    <li><a href="#"><img src="" alt="">페북</a></li>
-                    <li><a href="#"><img src="" alt="">인스타</a></li>
-                    <li><a href="#"><img src="" alt="">유튭</a></li>
-                    <li><a href="#"><img src="" alt="">블로그</a></li>
-                    <li><a href="#"><img src="" alt="">카페</a></li>
-                    <li><a href="#"><img src="" alt="">카톡</a></li>
-                </ul>
-                <ul class="login">
+        <nav class="gnb">
+            <div class="homepage">
+                <div class="left-home">
+                    <ul class="text">
+                        <li><a href="#" class="first">영진전문대학교</a></li>
+                        <li><a href="#" class="second">입학홈페이지</a></li>
+                    </ul>
+                    <ul class="img">
+                        <li><a href="#"><img src="./img/face.png"></a></li>
+                        <li><a href="#"><img src="./img/인스타.png"></a></li>
+                        <li><a href="#"><img src="img/유튜브.png"></a></li>
+                        <li><a href="#"><img src="img/블로그.png"></a></li>
+                        <li><a href="#"><img src="img/카페.png"></a></li>
+                        <li><a href="#"><img src="img/머지.png"></a></li>
+                    </ul>
+                </div>
+                <ul class="right-home">
                     <li><a href="#">로그인</a></li>
                     <li><a href="#">사이트맵</a></li>
                     <li><a href="#">KOR</a></li>
@@ -49,6 +45,9 @@
                 </ul>
             </div>
             <ul class="topgnb">
+                <h1 id="top-logo">
+                    <a href="#"><img src="./img/h-logo.svg" alt=""></a>
+                </h1>
                 <li class="topgnbli">
                     <a href="#intro">대학안내</a>
                     <ul class="submenu">
@@ -300,44 +299,63 @@
             </div>
             <div class="midbanner">
                 <ul class="midul">
-                        <li><a href="#"><img src="./img/mid/temp_1649240365858100.png"></a></li>
-                        <li><a href="#"><img src="./img/mid/temp_1649240418647100.png"></a></li>
-                        <li><a href="#"><img src="./img/mid/temp_1649240473287100.png"></a></li>
-                        <li><a href="#"><img src="./img/mid/temp_1649240496174100.png"></a></li>
-                        <li><a href="#"><img src="./img/mid/temp_1649240518226100.png"></a></li>
-                        <li><a href="#"><img src="./img/mid/temp_1649240551821100.png"></a></li>
-                        <li><a href="#"><img src="./img/mid/temp_1649240579276100.png"></a></li>
-                        <li><a href="#"><img src="./img/mid/temp_1649240614581100.png"></a></li>
-                        <li><a href="#"><img src="./img/mid/temp_1649240636546100.png"></a></li>
-                        <li><a href="#"><img src="./img/mid/temp_1649240659516100.png"></a></li>
-                    <div class="text">
-                        <a href="#"><span> VISION 2030</span></a>
-                        <a href="#"><span> 산학협력단</span></a>
-                        <a href="#"><span> 종합인력개발센터</span></a>
-                        <a href="#"><span> 대구경북영어마을</span></a>
-                        <a href="#"><span> 종합정보시스템</span></a>
-                        <a href="#"><span> 구매ㆍ입찰공고</span></a>
-                        <a href="#"><span> 대학정보공시</span></a>
-                        <a href="#"><span> 증명발급</span></a>
-                        <a href="#"><span> 입학안내</span></a>
-                        <a href="#"><span> 찾아오시는길</span></a>
-                    </div>
+                    <li><a href="#"><img src="./img/mid/temp_1649240365858100.png"><span> VISION 2030</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240418647100.png"><span> 산학협력단</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240473287100.png"><span> 종합인력개발센터</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240496174100.png"><span> 대구경북영어마을</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240518226100.png"><span> 종합정보시스템</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240551821100.png"><span> 구매ㆍ입찰공고</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240579276100.png"><span> 대학정보공시</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240614581100.png"><span> 증명발급</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240636546100.png"><span> 입학안내</span></a></li>
+                    <li><a href="#"><img src="./img/mid/temp_1649240659516100.png"><span> 찾아오시는길</span></a></li>
                 </ul>
             </div>
             <div class="pride">
+                <div class="pridetop">
+                    <a href="#">+전체보기</a>
+                    <h2 class="toph2">PRIDE OF <strong>YEUNGJIN</strong><div></div></h2>
+                </div>
                 <ul class="prideul">
-                    <li><a href="#"><p> 취업률<br> 전국 1위 </p><img src="./img/pride01.png"><span> 2022 교육부 발표<br> 연간 졸업생 3,000명 이상 전문대학</span></a></li>
-                    <li><a href="#"><p> 해외취업 전국 1위<br> 최근 5년 631명 선진국 위주 취업 </p><img src="./img/pride02.png"><span> 2022 교육부 발표</span></a></li>
-                    <li><a href="#"><p> 전국 최다 규모 장학금<br> 연평균 300여억 원 지급 </p><img src="./img/pride03.png"><span> 2021년 교육부 발표</span></a></li>
-                    <li><a href="#"><p> 최고등급<br> 일반재정지원대학 선정 </p><img src="./img/pride04.png"><span> 2021 교육부 </span></a></li>
-                    <li><a href="#"><p> 전문대학 최초!<br> 4년제를 넘어 석사까지<br> 교육부 마이스터대학 선정 </p><img src="./img/pride05.png"><span> 2021 교육부 </span></a></li>
-                    <li><a href="#"><p> 전문대 유일!<br> 인공지능(AI) 및 지능형로봇 분야<br> 교육부 혁신공유대학 선정 </p><img src="./img/pride06.png"><span> 2021 교육부 선정</span></a></li>
-                    <li><a href="#"><p> 한국에서 가장 존경받는 기업<br> 전문대학 부문 11년 연속 1위</p><img src="./img/pride07.png"><span> 2022 한국능률협회컨설팅 </span></a></li>
-                    <li><a href="#"><p> 대기업취업 & 해외취업<br> 최근 5년 2,521명 </p><img src="./img/pride08.png"><span> 2018~2022 교육부 발표 및 <br> 건강보험가입자 기준 </span></a></li>
-                    <li><a href="#"><p> 전문대학 기관평가인증<br> 3주기 연속 ‘인증’ 취득 </p><img src="./img/pride09.png"><span> 2021 고등직업교육평가인증원 </span></a></li>
-                    <li><a href="#"><p> 글로벌 인재양성<br> 교육국제화역량인증대학 IEQAS </p><img src="./img/pride10.png"><span> 2021 교육부·법무부 발표 </span></a></li>
-                    <li><a href="#"><p> 전문대학 혁신지원사업<br> 자율협약형(I유형) 선정 및<br> 연차평가 A등급(최고등급) </p><img src="./img/pride11.png"><span> 2020 교육부 </span></a></li>
-                    <li><a href="#"><p> LINC+ 사업 선정<br> 사회맞춤형 산학협력 선도전문대학<br> (1단계 매우우수, 2단계 계속지원) </p><img src="./img/pride12.png"><span> 2021 교육부 </span></a></li>
+                    <li><a href="#">
+                            <p> 취업률<br> 전국 1위 </p>
+                            <div class="img"><img src="./img/pride01.png"></div><span> 2022 교육부 발표<br> 연간 졸업생 3,000명 이상 전문대학</span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 해외취업 전국 1위<br> 최근 5년 631명 선진국 위주 취업 </p><div class="img"><img src="./img/pride02.png"></div><span> 2022 교육부 발표</span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 전국 최다 규모 장학금<br> 연평균 300여억 원 지급 </p><div class="img"><img src="./img/pride03.png"></div><span> 2021년 교육부 발표</span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 최고등급<br> 일반재정지원대학 선정 </p><div class="img"><img src="./img/pride04.png"></div><span> 2021 교육부 </span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 전문대학 최초!<br> 4년제를 넘어 석사까지<br> 교육부 마이스터대학 선정 </p><div class="img"><img src="./img/pride05.png"></div><span> 2021 교육부 </span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 전문대 유일!<br> 인공지능(AI) 및 지능형로봇 분야<br> 교육부 혁신공유대학 선정 </p><div class="img"><img src="./img/pride06.png"></div><span> 2021 교육부 선정</span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 한국에서 가장 존경받는 기업<br> 전문대학 부문 11년 연속 1위</p><div class="img"><img src="./img/pride07.png"></div><span> 2022 한국능률협회컨설팅 </span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 대기업취업 & 해외취업<br> 최근 5년 2,521명 </p><div class="img"><img src="./img/pride08.png"></div><span> 2018~2022 교육부 발표 및 <br> 건강보험가입자 기준
+                            </span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 전문대학 기관평가인증<br> 3주기 연속 ‘인증’ 취득 </p><div class="img"><img src="./img/pride09.png"></div><span> 2021 고등직업교육평가인증원 </span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 글로벌 인재양성<br> 교육국제화역량인증대학 IEQAS </p><div class="img"><img src="./img/pride10.png"></div><span> 2021 교육부·법무부 발표 </span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> 전문대학 혁신지원사업<br> 자율협약형(I유형) 선정 및<br> 연차평가 A등급(최고등급) </p><div class="img"><img src="./img/pride11.png"></div><span> 2020 교육부 </span>
+                        </a></li>
+                    <li><a href="#">
+                            <p> LINC+ 사업 선정<br> 사회맞춤형 산학협력 선도전문대학<br> (1단계 매우우수, 2단계 계속지원) </p><div class="img"><img src="./img/pride12.png"></div><span> 2021 교육부
+                            </span>
+                        </a></li>
                 </ul>
             </div>
             <div class="news">
